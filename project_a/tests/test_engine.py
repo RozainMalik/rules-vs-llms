@@ -54,10 +54,21 @@ def test_missing_salary_asks():
     assert isinstance(res, Clarification) and "salary" in res.questions[0].lower()
 
 
-def test_rent_without_details_asks_for_hra_fields():
+def test_rent_without_hra_info_asks_about_hra():
     res = ENGINE.compute(TaxInput(gross_salary=1500000, age=30, rent_paid=240000))
+    assert isinstance(res, Clarification) and "hra_received" in res.reason
+
+
+def test_hra_without_details_asks_for_rent_basic_city():
+    res = ENGINE.compute(TaxInput(gross_salary=1500000, age=30, hra_received=300000))
     assert isinstance(res, Clarification)
-    assert "basic_plus_da" in res.reason and "rent_city_is_metro" in res.reason
+    for f in ("rent_paid", "basic_plus_da", "rent_city_is_metro"):
+        assert f in res.reason
+
+
+def test_rent_but_no_hra_computes():
+    res = ENGINE.compute(TaxInput(gross_salary=1500000, age=30, rent_paid=240000, hra_received=0))
+    assert isinstance(res, TaxResult)
 
 
 def test_contradiction_asks():

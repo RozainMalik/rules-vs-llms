@@ -58,9 +58,12 @@ class TaxInput:
         if self.age is None:
             missing.append("age")
 
-        claims_hra = (self.hra_received or 0) > 0 or (self.rent_paid or 0) > 0
-        if claims_hra:
-            for name in ("hra_received", "rent_paid", "basic_plus_da", "rent_city_is_metro"):
+        # Pays rent but never said whether salary has an HRA component -> ask that first.
+        if (self.rent_paid or 0) > 0 and self.hra_received is None:
+            missing.append("hra_received")
+        # Receives HRA -> the exemption needs rent, basic+DA and the city.
+        if (self.hra_received or 0) > 0:
+            for name in ("rent_paid", "basic_plus_da", "rent_city_is_metro"):
                 if getattr(self, name) is None:
                     missing.append(name)
 

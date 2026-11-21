@@ -1,0 +1,62 @@
+{
+ "fiscal_year": "2024-25",
+ "feedback_used": true,
+ "selected_sample": 2,
+ "passed_all_edge_cases": true,
+ "candidates": [
+  {
+   "sample": 0,
+   "latency_s": 14.762,
+   "cost_usd": 0.01389,
+   "lines": 408,
+   "edge": {
+    "correct": 94,
+    "total": 131,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 240,
+    "total": 281,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  },
+  {
+   "sample": 1,
+   "latency_s": 10.161,
+   "cost_usd": 0.01129,
+   "lines": 351,
+   "edge": {
+    "correct": 94,
+    "total": 131,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 240,
+    "total": 281,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  },
+  {
+   "sample": 2,
+   "latency_s": 16.687,
+   "cost_usd": 0.01223,
+   "lines": 405,
+   "edge": {
+    "correct": 131,
+    "total": 131,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 281,
+    "total": 281,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  }
+ ]
+}

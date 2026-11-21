@@ -1,0 +1,191 @@
+# =====================================================================
+# Income-tax rules for SALARIED, RESIDENT individuals
+# FY 2024-25  (AY 2025-26)  — Finance (No. 2) Act, 2024
+#
+# This file is the single source of truth for the hand-coded engine
+# (implementation A). Every number here has a `clause` so that every
+# rupee in an answer can be traced back to the law.
+#
+# `verified: false` means "copied from memory/secondary summary, not yet
+# checked against the bare act on incometaxindia.gov.in". Flip to true
+# only after you have read the official text yourself.
+# =====================================================================
+
+fiscal_year: "2024-25"
+assessment_year: "2025-26"
+source_urls:
+  - https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx
+  - https://incometaxindia.gov.in/Pages/i-am/individual.aspx
+  - https://www.indiabudget.gov.in/budget2024-25/doc/Finance_Bill.pdf
+
+# Rounding applies to BOTH regimes.
+rounding:
+  total_income:
+    clause: "Sec 288A"
+    rule: nearest_10        # last digit >=5 rounds up, paise ignored first
+    verified: false
+  tax_payable:
+    clause: "Sec 288B"
+    rule: nearest_10
+    verified: false
+
+cess:
+  clause: "Finance (No.2) Act 2024, s.2 — Health & Education Cess"
+  rate: 0.04                # on (tax after rebate + surcharge - marginal relief)
+  verified: false
+
+# ---------------------------------------------------------------------
+# OLD REGIME  (taxpayer has opted out of Sec 115BAC)
+# ---------------------------------------------------------------------
+old_regime:
+
+  # Slabs depend on the taxpayer's age at any time during the FY.
+  # Each slab: tax `rate` applies to income ABOVE `from` up to `to`.
+  slabs:
+    below_60:
+      clause: "First Schedule, Part III, Para A(I)"
+      verified: false
+      bands:
+        - {from: 0,       to: 250000,  rate: 0.00}
+        - {from: 250000,  to: 500000,  rate: 0.05}
+        - {from: 500000,  to: 1000000, rate: 0.20}
+        - {from: 1000000, to: null,    rate: 0.30}
+    senior_60_to_79:
+      clause: "First Schedule, Part III, Para A(II)"
+      verified: false
+      bands:
+        - {from: 0,       to: 300000,  rate: 0.00}
+        - {from: 300000,  to: 500000,  rate: 0.05}
+        - {from: 500000,  to: 1000000, rate: 0.20}
+        - {from: 1000000, to: null,    rate: 0.30}
+    super_senior_80_plus:
+      clause: "First Schedule, Part III, Para A(III)"
+      verified: false
+      bands:
+        - {from: 0,       to: 500000,  rate: 0.00}
+        - {from: 500000,  to: 1000000, rate: 0.20}
+        - {from: 1000000, to: null,    rate: 0.30}
+
+  standard_deduction:
+    clause: "Sec 16(ia)"
+    amount: 50000           # or gross salary, whichever is lower
+    verified: false
+
+  hra_exemption:
+    clause: "Sec 10(13A) r/w Rule 2A"
+    # Exempt = least of:
+    #   (1) actual HRA received
+    #   (2) rent paid - 10% of salary
+    #   (3) 50% of salary (metro) / 40% of salary (non-metro)
+    # where "salary" = basic + DA (DA assumed to form part of retirement benefits)
+    rent_excess_over_salary_pct: 0.10
+    metro_pct: 0.50
+    non_metro_pct: 0.40
+    metro_cities: [delhi, mumbai, kolkata, chennai]
+    verified: false
+
+  home_loan_interest_self_occupied:
+    clause: "Sec 24(b) proviso; Sec 71(3A)"
+    cap: 200000
+    verified: false
+
+  deductions:            # Chapter VI-A — total cannot exceed gross total income (Sec 80A(2))
+    sec_80c:
+      clause: "Sec 80C r/w Sec 80CCE"
+      cap: 150000
+      verified: false
+    sec_80ccd_1b:
+      clause: "Sec 80CCD(1B)"
+      cap: 50000            # over and above the 80C limit
+      verified: false
+    sec_80d:
+      clause: "Sec 80D"
+      self_family_cap: 25000
+      self_family_cap_if_senior: 50000     # taxpayer or spouse is 60+
+      parents_cap: 25000
+      parents_cap_if_senior: 50000         # either parent is 60+
+      verified: false
+
+  rebate_87a:
+    clause: "Sec 87A"
+    income_limit: 500000    # total income must be <= this
+    max_rebate: 12500
+    marginal_relief: false
+    verified: false
+
+  surcharge:
+    clause: "First Schedule, Part III, Para A — Surcharge"
+    marginal_relief: true
+    # Rate applies to income-tax when TOTAL INCOME exceeds `above`.
+    bands:
+      - {above: 5000000,  rate: 0.10}
+      - {above: 10000000, rate: 0.15}
+      - {above: 20000000, rate: 0.25}
+      - {above: 50000000, rate: 0.37}
+    verified: false
+
+# ---------------------------------------------------------------------
+# NEW REGIME  (Sec 115BAC — the DEFAULT regime since FY 2023-24)
+# ---------------------------------------------------------------------
+new_regime:
+  default: true
+  default_clause: "Sec 115BAC(1A)"
+
+  slabs:
+    all_ages:               # age does not matter in the new regime
+      clause: "Sec 115BAC(1A)(ii) as amended by Finance (No.2) Act 2024"
+      verified: true        # checked against official text: "Revised Tax Slabs u/s 115BAC(1A)(ii) (from AY 2025-26)"
+      bands:
+        - {from: 0,       to: 300000,  rate: 0.00}
+        - {from: 300000,  to: 700000,  rate: 0.05}
+        - {from: 700000,  to: 1000000, rate: 0.10}
+        - {from: 1000000, to: 1200000, rate: 0.15}
+        - {from: 1200000, to: 1500000, rate: 0.20}
+        - {from: 1500000, to: null,    rate: 0.30}
+
+  standard_deduction:
+    clause: "Sec 16(ia) proviso (for Sec 115BAC)"
+    amount: 75000
+    verified: false
+
+  # Not allowed under 115BAC: HRA exemption, 80C, 80CCD(1B), 80D,
+  # and interest on a self-occupied house.
+  disallowed:
+    clause: "Sec 115BAC(2)"
+    items: [hra_exemption, sec_80c, sec_80ccd_1b, sec_80d, home_loan_interest_self_occupied]
+    verified: false
+
+  rebate_87a:
+    clause: "Sec 87A (first and second provisos)"
+    income_limit: 700000
+    max_rebate: 25000
+    # If total income is just above the limit, tax (before cess) cannot
+    # exceed (total income - income_limit).
+    marginal_relief: true
+    verified: false
+
+  surcharge:
+    clause: "Sec 115BAC(1A) proviso — surcharge capped at 25%"
+    marginal_relief: true
+    bands:
+      - {above: 5000000,  rate: 0.10}
+      - {above: 10000000, rate: 0.15}
+      - {above: 20000000, rate: 0.25}
+    verified: false
+
+# ---------------------------------------------------------------------
+# ORDER OF COMPUTATION  (the engine follows exactly this order)
+# ---------------------------------------------------------------------
+# 1. gross_salary        = basic + DA + HRA received + other taxable allowances
+# 2. less HRA exemption  (old only)                          Sec 10(13A)
+# 3. less standard deduction                                  Sec 16(ia)
+#    => income from salary
+# 4. less home-loan interest, self-occupied (old only)        Sec 24(b)
+#    => gross total income (floored at 0)
+# 5. less Chapter VI-A deductions (old only), capped at GTI   Sec 80A(2)
+#    => total income, rounded to nearest 10                   Sec 288A
+# 6. tax on slabs
+# 7. less 87A rebate (+ marginal relief in new regime)        Sec 87A
+# 8. plus surcharge, less marginal relief on surcharge
+# 9. plus 4% cess
+# 10. round to nearest 10                                     Sec 288B

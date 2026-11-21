@@ -1,0 +1,1 @@
+{"text": "{\n  \"flags\": [\n    {\n      \"row\": 869,\n      \"explanation\": \"resolution_description indicates the complaint was referred to DHS and they will update the Service Request, which contradicts the 'Closed' status.\"\n    }\n  ]\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 412, "output_tokens": 60, "latency_s": 0.885}

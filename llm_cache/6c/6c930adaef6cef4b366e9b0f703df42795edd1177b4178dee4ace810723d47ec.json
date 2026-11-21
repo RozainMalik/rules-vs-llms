@@ -1,0 +1,1 @@
+{"text": "{\"flags\": [\n  {\n    \"row\": 2834,\n    \"explanation\": \"status is 'Closed' but resolution_description states 'The following complaint conditions are still open.'\"\n  }\n]}", "model": "gemini-3.5-flash-lite", "input_tokens": 806, "output_tokens": 48, "latency_s": 0.882}

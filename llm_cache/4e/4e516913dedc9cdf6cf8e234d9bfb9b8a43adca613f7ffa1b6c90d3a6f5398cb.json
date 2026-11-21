@@ -1,0 +1,1 @@
+{"text": "{\"problem_found\": false, \"explanation\": \"All expected columns are present with matching names and data types in the batch.\"}", "model": "gemini-3.5-flash-lite", "input_tokens": 1202, "output_tokens": 27, "latency_s": 0.707}

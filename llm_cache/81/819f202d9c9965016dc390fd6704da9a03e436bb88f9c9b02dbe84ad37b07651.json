@@ -1,0 +1,1 @@
+{"text": "{\n  \"problem_found\": false,\n  \"explanation\": \"All expected columns are present with matching names and compatible data types.\"\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 1242, "output_tokens": 31, "latency_s": 0.963}

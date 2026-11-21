@@ -145,7 +145,8 @@ class LLM:
                 return resp
             except Exception as e:  # noqa: BLE001
                 msg = str(e)
-                retriable = any(c in msg for c in ("429", "503", "500", "RESOURCE_EXHAUSTED", "UNAVAILABLE", "timed out"))
+                retriable = any(c in msg for c in ("429", "503", "500", "RESOURCE_EXHAUSTED", "UNAVAILABLE", "timed out",
+                                                 "ConnectError", "nodename nor servname", "Connection", "Temporary failure"))
                 if not retriable or attempt == max_retries - 1:
                     raise
                 time.sleep(delay)

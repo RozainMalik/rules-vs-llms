@@ -1,0 +1,796 @@
+{
+ "rows": 292000,
+ "columns": 23,
+ "created_range": [
+  "2023-01-01 00:01:57",
+  "2023-12-31 23:59:23"
+ ],
+ "null_rate_pct": {
+  "due_date": 99.45,
+  "location_type": 9.39,
+  "city": 5.79,
+  "street_name": 3.26,
+  "incident_address": 3.26,
+  "latitude": 1.25,
+  "x_coordinate_state_plane": 1.25,
+  "longitude": 1.25,
+  "y_coordinate_state_plane": 1.24,
+  "closed_date": 1.24,
+  "incident_zip": 1.04,
+  "descriptor": 1.04,
+  "resolution_description": 0.75,
+  "resolution_action_updated_date": 0.43,
+  "complaint_type": 0.0,
+  "created_date": 0.0,
+  "status": 0.0,
+  "agency_name": 0.0,
+  "community_board": 0.0,
+  "borough": 0.0,
+  "agency": 0.0,
+  "open_data_channel_type": 0.0,
+  "unique_key": 0.0
+ },
+ "issues": {
+  "closed_before_created": {
+   "description": "closed_date earlier than created_date",
+   "count": 356,
+   "pct": 0.122,
+   "by_agency": {
+    "DOT": 279,
+    "NYPD": 75,
+    "DSNY": 1,
+    "DEP": 1
+   },
+   "examples": [
+    {
+     "unique_key": 56426495,
+     "created_date": "2023-01-03T09:34:00.000",
+     "closed_date": "2022-12-30T09:34:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Pending"
+    },
+    {
+     "unique_key": 56426498,
+     "created_date": "2023-01-03T09:37:00.000",
+     "closed_date": "2022-12-30T09:37:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Pending"
+    },
+    {
+     "unique_key": 56445257,
+     "created_date": "2023-01-05T11:20:00.000",
+     "closed_date": "2022-12-30T11:20:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Pending"
+    }
+   ]
+  },
+  "zero_duration": {
+   "description": "closed_date exactly equals created_date (closed instantly)",
+   "count": 4229,
+   "pct": 1.448,
+   "by_agency": {
+    "DOHMH": 2057,
+    "DOB": 833,
+    "DOT": 822,
+    "DEP": 490,
+    "HPD": 23
+   },
+   "examples": [
+    {
+     "unique_key": 56412696,
+     "created_date": "2023-01-01T22:26:23.000",
+     "closed_date": "2023-01-01T22:26:23.000",
+     "agency": "DOHMH",
+     "complaint_type": "Rodent",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56412810,
+     "created_date": "2023-01-01T13:58:07.000",
+     "closed_date": "2023-01-01T13:58:07.000",
+     "agency": "DOHMH",
+     "complaint_type": "Rodent",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56413014,
+     "created_date": "2023-01-01T13:52:36.000",
+     "closed_date": "2023-01-01T13:52:36.000",
+     "agency": "DOHMH",
+     "complaint_type": "Rodent",
+     "status": "Closed"
+    }
+   ]
+  },
+  "closed_after_snapshot": {
+   "description": "closed_date in the future relative to download date",
+   "count": 0,
+   "pct": 0.0,
+   "by_agency": {},
+   "examples": []
+  },
+  "open_over_1_year": {
+   "description": "closed more than 365 days after creation",
+   "count": 3275,
+   "pct": 1.122,
+   "by_agency": {
+    "DPR": 1344,
+    "DOHMH": 947,
+    "EDC": 427,
+    "DOB": 350,
+    "DOT": 133
+   },
+   "examples": [
+    {
+     "unique_key": 56412534,
+     "created_date": "2023-01-01T18:15:08.000",
+     "closed_date": "2024-01-11T14:03:33.000",
+     "agency": "DSNY",
+     "complaint_type": "Graffiti",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56412756,
+     "created_date": "2023-01-01T02:50:56.000",
+     "closed_date": "2024-06-03T22:59:11.000",
+     "agency": "DOHMH",
+     "complaint_type": "Food Establishment",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56412767,
+     "created_date": "2023-01-01T12:47:22.000",
+     "closed_date": "2024-11-12T17:04:21.000",
+     "agency": "DPR",
+     "complaint_type": "Damaged Tree",
+     "status": "Closed"
+    }
+   ]
+  },
+  "update_before_created": {
+   "description": "resolution_action_updated_date before created_date",
+   "count": 3659,
+   "pct": 1.253,
+   "by_agency": {
+    "HPD": 1748,
+    "DOB": 834,
+    "DOT": 754,
+    "DSNY": 241,
+    "NYPD": 72
+   },
+   "examples": [
+    {
+     "unique_key": 56413194,
+     "created_date": "2023-01-01T00:16:58.000",
+     "closed_date": "2023-01-01T11:44:04.000",
+     "agency": "HPD",
+     "complaint_type": "UNSANITARY CONDITION",
+     "status": "Closed",
+     "resolution_action_updated_date": "2023-01-01T00:00:00.000"
+    },
+    {
+     "unique_key": 56413292,
+     "created_date": "2023-01-01T12:15:00.000",
+     "closed_date": "2023-01-01T23:23:00.000",
+     "agency": "DSNY",
+     "complaint_type": "Derelict Vehicles",
+     "status": "Closed",
+     "resolution_action_updated_date": "2023-01-01T12:00:00.000"
+    },
+    {
+     "unique_key": 56426211,
+     "created_date": "2023-01-03T11:46:00.000",
+     "closed_date": "2023-01-03T11:46:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Closed",
+     "resolution_action_updated_date": "2023-01-02T11:46:00.000"
+    }
+   ]
+  },
+  "closed_status_no_closed_date": {
+   "description": "status Closed but closed_date missing",
+   "count": 1294,
+   "pct": 0.443,
+   "by_agency": {
+    "DHS": 1294
+   },
+   "examples": [
+    {
+     "unique_key": 57896350,
+     "created_date": "2023-06-15T01:10:58.000",
+     "closed_date": null,
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 57944220,
+     "created_date": "2023-06-20T00:37:34.000",
+     "closed_date": null,
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 57949855,
+     "created_date": "2023-06-20T05:56:05.000",
+     "closed_date": null,
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed"
+    }
+   ]
+  },
+  "open_status_with_closed_date": {
+   "description": "open-type status but a closed_date is present",
+   "count": 370,
+   "pct": 0.127,
+   "by_agency": {
+    "DOT": 283,
+    "DOB": 82,
+    "DEP": 2,
+    "DOHMH": 1,
+    "DPR": 1
+   },
+   "examples": [
+    {
+     "unique_key": 56426495,
+     "created_date": "2023-01-03T09:34:00.000",
+     "closed_date": "2022-12-30T09:34:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Pending"
+    },
+    {
+     "unique_key": 56426498,
+     "created_date": "2023-01-03T09:37:00.000",
+     "closed_date": "2022-12-30T09:37:00.000",
+     "agency": "DOT",
+     "complaint_type": "Street Light Condition",
+     "status": "Pending"
+    },
+    {
+     "unique_key": 56435292,
+     "created_date": "2023-01-04T13:00:27.000",
+     "closed_date": "2023-01-04T13:00:27.000",
+     "agency": "DOB",
+     "complaint_type": "General Construction/Plumbing",
+     "status": "Open"
+    }
+   ]
+  },
+  "due_date_mostly_empty": {
+   "description": "due_date is empty (column nearly dead)",
+   "count": 290408,
+   "pct": 99.455,
+   "by_agency": {
+    "NYPD": 201032,
+    "HPD": 21869,
+    "DEP": 13389,
+    "DSNY": 13106,
+    "DOT": 12078
+   },
+   "examples": [
+    {
+     "unique_key": 56408061,
+     "created_date": "2023-01-01T00:32:00.000",
+     "closed_date": "2023-01-01T01:30:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56408676,
+     "created_date": "2023-01-01T00:43:00.000",
+     "closed_date": "2023-01-03T02:14:00.000",
+     "agency": "DSNY",
+     "complaint_type": "Derelict Vehicles",
+     "status": "Closed"
+    },
+    {
+     "unique_key": 56409451,
+     "created_date": "2023-01-01T00:18:00.000",
+     "closed_date": "2023-01-01T03:40:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed"
+    }
+   ]
+  },
+  "missing_coordinates": {
+   "description": "latitude/longitude missing",
+   "count": 3643,
+   "pct": 1.248,
+   "by_agency": {
+    "DOT": 1520,
+    "NYPD": 1411,
+    "DSNY": 367,
+    "DEP": 151,
+    "TLC": 69
+   },
+   "examples": [
+    {
+     "unique_key": 56408061,
+     "created_date": "2023-01-01T00:32:00.000",
+     "closed_date": "2023-01-01T01:30:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56412433,
+     "created_date": "2023-01-01T00:20:00.000",
+     "closed_date": "2023-01-01T11:00:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56412512,
+     "created_date": "2023-01-01T21:28:33.000",
+     "closed_date": "2023-01-01T21:53:47.000",
+     "agency": "NYPD",
+     "complaint_type": "Traffic",
+     "status": "Closed",
+     "incident_address": null
+    }
+   ]
+  },
+  "coords_outside_nyc": {
+   "description": "coordinates outside NYC box",
+   "count": 0,
+   "pct": 0.0,
+   "by_agency": {},
+   "examples": []
+  },
+  "borough_unspecified": {
+   "description": "borough is 'Unspecified'",
+   "count": 284,
+   "pct": 0.097,
+   "by_agency": {
+    "DOT": 93,
+    "NYPD": 77,
+    "TLC": 65,
+    "DCWP": 14,
+    "DSNY": 12
+   },
+   "examples": [
+    {
+     "unique_key": 56419618,
+     "created_date": "2023-01-02T10:22:24.000",
+     "closed_date": "2023-01-02T11:05:15.000",
+     "agency": "NYPD",
+     "complaint_type": "Illegal Parking",
+     "status": "Closed",
+     "incident_zip": null,
+     "borough": "Unspecified"
+    },
+    {
+     "unique_key": 56419743,
+     "created_date": "2023-01-02T16:12:51.000",
+     "closed_date": "2023-01-02T16:40:28.000",
+     "agency": "NYPD",
+     "complaint_type": "Noise - Street/Sidewalk",
+     "status": "Closed",
+     "incident_zip": null,
+     "borough": "Unspecified"
+    },
+    {
+     "unique_key": 56419755,
+     "created_date": "2023-01-02T18:40:08.000",
+     "closed_date": "2023-01-02T19:06:41.000",
+     "agency": "NYPD",
+     "complaint_type": "Illegal Parking",
+     "status": "Closed",
+     "incident_zip": null,
+     "borough": "Unspecified"
+    }
+   ]
+  },
+  "missing_zip": {
+   "description": "incident_zip missing",
+   "count": 3035,
+   "pct": 1.039,
+   "by_agency": {
+    "DHS": 982,
+    "NYPD": 932,
+    "DOT": 712,
+    "DSNY": 272,
+    "TLC": 71
+   },
+   "examples": [
+    {
+     "unique_key": 56408061,
+     "created_date": "2023-01-01T00:32:00.000",
+     "closed_date": "2023-01-01T01:30:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56412433,
+     "created_date": "2023-01-01T00:20:00.000",
+     "closed_date": "2023-01-01T11:00:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56412512,
+     "created_date": "2023-01-01T21:28:33.000",
+     "closed_date": "2023-01-01T21:53:47.000",
+     "agency": "NYPD",
+     "complaint_type": "Traffic",
+     "status": "Closed",
+     "incident_address": null
+    }
+   ]
+  },
+  "zip_borough_mismatch": {
+   "description": "ZIP/borough pair accounts for <2% of that ZIP's rows (likely wrong)",
+   "count": 4,
+   "pct": 0.001,
+   "by_agency": {
+    "NYPD": 3,
+    "DEP": 1
+   },
+   "examples": [
+    {
+     "unique_key": 58125663,
+     "created_date": "2023-07-08T00:03:15.000",
+     "closed_date": "2023-07-08T01:08:42.000",
+     "agency": "NYPD",
+     "complaint_type": "Illegal Fireworks",
+     "status": "Closed",
+     "incident_zip": "11416",
+     "borough": "BROOKLYN",
+     "incident_address": "95 AVENUE"
+    },
+    {
+     "unique_key": 58503071,
+     "created_date": "2023-08-14T06:08:00.000",
+     "closed_date": "2023-08-14T06:20:00.000",
+     "agency": "DEP",
+     "complaint_type": "Water System",
+     "status": "Closed",
+     "incident_zip": "11370",
+     "borough": "BRONX",
+     "incident_address": "19-19 HAZEN STREET"
+    },
+    {
+     "unique_key": 58534423,
+     "created_date": "2023-08-17T18:19:03.000",
+     "closed_date": "2023-08-17T18:22:00.000",
+     "agency": "NYPD",
+     "complaint_type": "Noise - Residential",
+     "status": "Closed",
+     "incident_zip": "11370",
+     "borough": "BRONX",
+     "incident_address": "15-00 HAZEN STREET"
+    }
+   ]
+  },
+  "city_borough_mismatch": {
+   "description": "city is a borough name different from the borough column",
+   "count": 0,
+   "pct": 0.0,
+   "by_agency": {},
+   "examples": []
+  },
+  "duplicate_rows_except_key": {
+   "description": "rows identical in every column except unique_key",
+   "count": 176,
+   "pct": 0.06,
+   "by_agency": {
+    "HPD": 94,
+    "DEP": 44,
+    "DOT": 28,
+    "DSNY": 8,
+    "DOHMH": 2
+   },
+   "examples": [
+    {
+     "unique_key": 56409451,
+     "created_date": "2023-01-01T00:18:00.000",
+     "closed_date": "2023-01-01T03:40:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "descriptor": "Controller",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56411233,
+     "created_date": "2023-01-01T00:18:00.000",
+     "closed_date": "2023-01-01T03:40:00.000",
+     "agency": "DOT",
+     "complaint_type": "Traffic Signal Condition",
+     "status": "Closed",
+     "descriptor": "Controller",
+     "incident_address": null
+    },
+    {
+     "unique_key": 56419789,
+     "created_date": "2023-01-02T09:30:57.000",
+     "closed_date": "2023-01-04T13:28:47.000",
+     "agency": "HPD",
+     "complaint_type": "ELECTRIC",
+     "status": "Closed",
+     "descriptor": "LIGHTING",
+     "incident_address": "769 ST MARKS AVENUE"
+    }
+   ]
+  },
+  "near_duplicates": {
+   "description": "same complaint/descriptor/address within 15 minutes",
+   "count": 21171,
+   "pct": 7.25,
+   "by_agency": {
+    "NYPD": 18246,
+    "EDC": 1249,
+    "HPD": 433,
+    "DOT": 259,
+    "DSNY": 226
+   },
+   "examples": [
+    {
+     "unique_key": 56412531,
+     "created_date": "2023-01-01T13:08:15.000",
+     "closed_date": "2023-01-01T13:50:03.000",
+     "agency": "NYPD",
+     "complaint_type": "Illegal Parking",
+     "status": "Closed",
+     "descriptor": "Blocked Sidewalk",
+     "incident_address": "700 CORTELYOU ROAD"
+    },
+    {
+     "unique_key": 56412559,
+     "created_date": "2023-01-01T02:03:15.000",
+     "closed_date": "2023-01-01T02:37:21.000",
+     "agency": "NYPD",
+     "complaint_type": "Noise - Residential",
+     "status": "Closed",
+     "descriptor": "Loud Music/Party",
+     "incident_address": "17 AVENUE W"
+    },
+    {
+     "unique_key": 56412605,
+     "created_date": "2023-01-01T14:17:27.000",
+     "closed_date": "2023-01-31T07:58:21.000",
+     "agency": "EDC",
+     "complaint_type": "Noise - Helicopter",
+     "status": "Closed",
+     "descriptor": "Other",
+     "incident_address": "113 1 PLACE"
+    }
+   ]
+  },
+  "complaint_type_case_variants": {
+   "description": "complaint types that differ only by case/spacing",
+   "count": 2,
+   "examples": {
+    "elevator": [
+     "ELEVATOR",
+     "Elevator"
+    ],
+    "plumbing": [
+     "PLUMBING",
+     "Plumbing"
+    ]
+   }
+  },
+  "missing_descriptor": {
+   "description": "descriptor missing",
+   "count": 3034,
+   "pct": 1.039,
+   "by_agency": {
+    "DHS": 3034
+   },
+   "examples": [
+    {
+     "unique_key": 56412729,
+     "created_date": "2023-01-01T12:22:35.000",
+     "closed_date": "2023-01-01T15:43:14.000",
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed",
+     "descriptor": null
+    },
+    {
+     "unique_key": 56412763,
+     "created_date": "2023-01-01T04:31:08.000",
+     "closed_date": "2023-01-01T10:19:47.000",
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed",
+     "descriptor": null
+    },
+    {
+     "unique_key": 56413019,
+     "created_date": "2023-01-01T12:39:57.000",
+     "closed_date": "2023-01-01T21:20:26.000",
+     "agency": "DHS",
+     "complaint_type": "Homeless Person Assistance",
+     "status": "Closed",
+     "descriptor": null
+    }
+   ]
+  },
+  "missing_resolution": {
+   "description": "resolution_description missing",
+   "count": 2180,
+   "pct": 0.747,
+   "by_agency": {
+    "EDC": 1010,
+    "DSNY": 647,
+    "DOHMH": 200,
+    "TLC": 118,
+    "DEP": 85
+   },
+   "examples": [
+    {
+     "unique_key": 56412534,
+     "created_date": "2023-01-01T18:15:08.000",
+     "closed_date": "2024-01-11T14:03:33.000",
+     "agency": "DSNY",
+     "complaint_type": "Graffiti",
+     "status": "Closed",
+     "resolution_description": null
+    },
+    {
+     "unique_key": 56412831,
+     "created_date": "2023-01-01T13:31:35.000",
+     "closed_date": null,
+     "agency": "DOHMH",
+     "complaint_type": "Food Poisoning",
+     "status": "In Progress",
+     "resolution_description": null
+    },
+    {
+     "unique_key": 56412985,
+     "created_date": "2023-01-01T15:12:57.000",
+     "closed_date": null,
+     "agency": "DOHMH",
+     "complaint_type": "Indoor Air Quality",
+     "status": "In Progress",
+     "resolution_description": null
+    }
+   ]
+  },
+  "resolution_contradicts_status": {
+   "description": "status vs resolution text contradiction (rule k)",
+   "count": 2341,
+   "pct": 0.802,
+   "by_agency": {
+    "DSNY": 1233,
+    "DOB": 399,
+    "NYPD": 306,
+    "DCWP": 224,
+    "HPD": 95
+   },
+   "examples": [
+    {
+     "unique_key": 56408676,
+     "agency": "DSNY",
+     "status": "Closed",
+     "resolution_description": "The Department of Sanitation does NOT have jurisdiction over vehicles (abandoned or otherwise) that have license plates affixed to them. Your request will be referred to the NYPD for further action."
+    },
+    {
+     "unique_key": 56410345,
+     "agency": "DSNY",
+     "status": "Closed",
+     "resolution_description": "The Department of Sanitation does NOT have jurisdiction over vehicles (abandoned or otherwise) that have license plates affixed to them. Your request will be referred to the NYPD for further action."
+    },
+    {
+     "unique_key": 56412701,
+     "agency": "NYPD",
+     "status": "Closed",
+     "resolution_description": "The Police Department visited the location and has referred the complaint to the Department of Homeless Services (DHS) for further action. DHS will inspect the condition and update your Service Request with more information."
+    }
+   ]
+  },
+  "mojibake_in_text": {
+   "description": "UTF-8 decoded as Latin-1 (e.g. 'Parks\u00e2')",
+   "count": 6235,
+   "pct": 2.135,
+   "by_agency": {
+    "DOT": 5761,
+    "DPR": 385,
+    "DOHMH": 63,
+    "DSNY": 26
+   },
+   "examples": [
+    {
+     "unique_key": 56408061,
+     "agency": "DOT",
+     "resolution_description": "Service Request status for this request is available on the Department of Transportation\u00e2\u0080\u0099s website. Please click the \u00e2\u0080\u009cLearn More\u00e2\u0080\u009d link below."
+    },
+    {
+     "unique_key": 56409451,
+     "agency": "DOT",
+     "resolution_description": "Service Request status for this request is available on the Department of Transportation\u00e2\u0080\u0099s website. Please click the \u00e2\u0080\u009cLearn More\u00e2\u0080\u009d link below."
+    },
+    {
+     "unique_key": 56410624,
+     "agency": "DOT",
+     "resolution_description": "Service Request status for this request is available on the Department of Transportation\u00e2\u0080\u0099s website. Please click the \u00e2\u0080\u009cLearn More\u00e2\u0080\u009d link below."
+    }
+   ]
+  },
+  "phone_in_text": {
+   "description": "phone-number pattern in resolution text",
+   "count": 7218,
+   "pct": 2.472,
+   "by_agency": {
+    "DEP": 4425,
+    "DOB": 1741,
+    "DOHMH": 281,
+    "DCWP": 275,
+    "DOT": 236
+   },
+   "examples": [
+    {
+     "unique_key": 56412539,
+     "agency": "DOB",
+     "resolution_description": "The Department of Buildings reviewed this complaint and closed it. If the problem still exists, please call 311 and file a new complaint. If you are outside of New York City, please call (212) NEW-YORK (212-639-9675)."
+    },
+    {
+     "unique_key": 56412602,
+     "agency": "DEP",
+     "resolution_description": "The Department of Environmental Protection (DEP) didn't observe a violation of the NYC Air or Noise Code at the time of inspection and couldn't issue a summons.  If the problem still exists, please go to nyc.gov/311 or call 311 to file a new Service Request. If you're outside of New York City, please call (212) NEW-YORK (212-639-9675)."
+    },
+    {
+     "unique_key": 56412618,
+     "agency": "DOB",
+     "resolution_description": "The Department of Buildings reviewed this complaint and closed it. If the problem still exists, please call 311 and file a new complaint. If you are outside of New York City, please call (212) NEW-YORK (212-639-9675)."
+    }
+   ],
+   "top_values": {
+    "(212-639-9675": 4669,
+    "212-639-9675": 1715,
+    "(212) 639-9675": 233,
+    "(212) 487-4110": 218,
+    "(212) 676-1600": 191
+   }
+  },
+  "email_in_text": {
+   "description": "email pattern in resolution text",
+   "count": 231,
+   "pct": 0.079,
+   "by_agency": {
+    "DOHMH": 191,
+    "DSNY": 40
+   },
+   "examples": [
+    {
+     "unique_key": 56414270,
+     "agency": "DOHMH",
+     "resolution_description": "The NYC Health Department has responded to your service request. For inspection results, please call (212) 676-1600 or email infobfscs@health.nyc.gov to request an inspection report. This service request has been closed."
+    },
+    {
+     "unique_key": 56420678,
+     "agency": "DOHMH",
+     "resolution_description": "The NYC Health Department has responded to your service request. For inspection results, please call (212) 676-1600 or email infobfscs@health.nyc.gov to request an inspection report. This service request has been closed."
+    },
+    {
+     "unique_key": 56421059,
+     "agency": "DOHMH",
+     "resolution_description": "The NYC Health Department has responded to your service request. For inspection results, please call (212) 676-1600 or email infobfscs@health.nyc.gov to request an inspection report. This service request has been closed."
+    }
+   ],
+   "top_values": {
+    "infobfscs@health.nyc": 191,
+    "customerservice@dsny.nyc": 40
+   }
+  }
+ }
+}

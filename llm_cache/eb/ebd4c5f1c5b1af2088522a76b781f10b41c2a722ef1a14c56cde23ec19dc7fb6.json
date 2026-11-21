@@ -1,0 +1,1 @@
+{"text": "{\"flags\": [{\"row\": 209, \"explanation\": \"status is Closed, but resolution_description states 'Another attempt will be made.', indicating work or follow-up is still pending.\"}]}", "model": "gemini-3.5-flash-lite", "input_tokens": 461, "output_tokens": 42, "latency_s": 2.618}

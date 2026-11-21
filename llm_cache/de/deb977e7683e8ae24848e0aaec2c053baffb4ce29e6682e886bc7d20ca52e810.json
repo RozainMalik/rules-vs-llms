@@ -1,0 +1,1 @@
+{"text": "{\n  \"problem_found\": false,\n  \"explanation\": \"No unusually high share of missing values is observed for any single agency in the provided sample.\"\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 3609, "output_tokens": 36, "latency_s": 2.217}

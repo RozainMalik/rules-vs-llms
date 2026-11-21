@@ -1,0 +1,1 @@
+{"text": "{\n  \"problem_found\": true,\n  \"explanation\": \"An expected column is renamed or mismatched in casing. The expected column 'latitude' is present in the batch as 'Latitude' (capitalized 'L').\"\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 1242, "output_tokens": 50, "latency_s": 2.097}

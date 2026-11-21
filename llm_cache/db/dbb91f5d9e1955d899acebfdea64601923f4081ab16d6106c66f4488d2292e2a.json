@@ -1,0 +1,1 @@
+{"text": "{\n  \"problem_found\": false,\n  \"explanation\": \"All rows in the provided sample have complete values for the checked columns, and no agency displays an unusually high share of missing values based on this dataset slice.\"\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 3812, "output_tokens": 49, "latency_s": 1.364}

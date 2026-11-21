@@ -1,0 +1,1 @@
+{"text": "{\n  \"problem_found\": true,\n  \"explanation\": \"Column 'x_coordinate_state_plane' has changed type from expected 'float64' to 'object' (string) because the values in the batch include comma separators (e.g., '1,006,448').\"\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 1247, "output_tokens": 71, "latency_s": 0.796}

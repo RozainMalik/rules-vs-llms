@@ -1,0 +1,141 @@
+{
+ "per_problem": [
+  {
+   "problem": "a",
+   "name": "renamed_or_dropped_column",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": null,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "b",
+   "name": "column_type_change",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": null,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "c",
+   "name": "date_format_switch",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "d",
+   "name": "lat_lon_swapped",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "e",
+   "name": "exact_duplicates",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "f",
+   "name": "near_duplicates",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 0.8556,
+   "false_alarm_rate": 0.00487
+  },
+  {
+   "problem": "g",
+   "name": "agency_null_spike",
+   "plan": "stat",
+   "detection_rate": 1.0,
+   "precision": null,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "h",
+   "name": "closed_before_created",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "i",
+   "name": "zip_borough_mismatch",
+   "plan": "rule",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  {
+   "problem": "j",
+   "name": "complaint_descriptor_mismatch",
+   "plan": "rule + LLM confirm",
+   "detection_rate": 0.8375,
+   "precision": 0.9853,
+   "false_alarm_rate": 0.00013
+  },
+  {
+   "problem": "k",
+   "name": "resolution_contradicts_status",
+   "plan": "rule+stat + LLM confirm",
+   "detection_rate": 0.6125,
+   "precision": 0.8909,
+   "false_alarm_rate": 0.00075
+  },
+  {
+   "problem": "l",
+   "name": "pii_in_free_text",
+   "plan": "rule+stat + LLM confirm",
+   "detection_rate": 1.0,
+   "precision": 1.0,
+   "false_alarm_rate": 0.0
+  }
+ ],
+ "totals": {
+  "rows": 60160,
+  "seconds": 6.199712000994623,
+  "llm_calls": 47,
+  "llm_cost_usd": 0.0315549,
+  "llm_rows": 434,
+  "llm_latency_s": 125.217
+ },
+ "cost_per_M_rows_usd": 0.525,
+ "llm_rows_share": 0.00721,
+ "cpu_rows_per_s": 9704,
+ "batch_latency_s": 4.37,
+ "real_data_alerts_per_4000_rows": {
+  "a": 0,
+  "b": 0,
+  "c": 0,
+  "d": 0,
+  "e": 0,
+  "f": 24,
+  "g": 4,
+  "h": 7,
+  "i": 0,
+  "j": 0,
+  "k": 1,
+  "l": 0
+ },
+ "real_data_llm": {
+  "rows": 4000,
+  "llm_calls": 2,
+  "llm_rows": 16,
+  "llm_cost_usd": 0.0005660999999999999,
+  "cpu_seconds": 0.4312354570029129,
+  "llm_latency_s": 1.617,
+  "cost_per_M_rows_usd": 0.142
+ },
+ "real_data_examples": {
+  "f": "Possible duplicate: same complaint/descriptor at '333 EAST   14 STREET' reported within 15 min by another request (created 2023-11-15T00:41:57.000).",
+  "g": "DHS: 34/37 nulls in 'closed_date' (expected ~9, z=9.4).",
+  "h": "closed_date 2023-11-05T01:24:22.000 is earlier than created_date 2023-11-05T01:33:28.000.",
+  "k": "Resolution text gives P(status=Closed)=0.033 (text model trained on Jan-Aug). LLM confirms: status is 'Closed' but resolution_description states 'The following complaint conditions are still open.'"
+ }
+}

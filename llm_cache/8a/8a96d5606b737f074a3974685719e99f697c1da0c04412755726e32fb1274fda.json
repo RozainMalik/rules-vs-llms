@@ -1,0 +1,1 @@
+{"text": "{\n  \"flags\": [\n    {\n      \"row\": 421,\n      \"explanation\": \"status is Closed, but the resolution_description states that DHS will inspect the condition and update your Service Request, implying ongoing work.\"\n    }\n  ]\n}", "model": "gemini-3.5-flash-lite", "input_tokens": 489, "output_tokens": 60, "latency_s": 0.757}

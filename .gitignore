@@ -6,3 +6,4 @@ data/raw/
 .pytest_cache/
 .venv/
 project_b/results/_refs.pkl
+llm_cache/.ratelimit.lock

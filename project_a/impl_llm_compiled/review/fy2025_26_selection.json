@@ -1,0 +1,98 @@
+{
+ "fiscal_year": "2025-26",
+ "feedback_used": true,
+ "selected_sample": 4,
+ "passed_all_edge_cases": true,
+ "candidates": [
+  {
+   "sample": 0,
+   "latency_s": 11.092,
+   "cost_usd": 0.01221,
+   "lines": 423,
+   "edge": {
+    "correct": 88,
+    "total": 148,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 139,
+    "total": 298,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  },
+  {
+   "sample": 1,
+   "latency_s": 12.284,
+   "cost_usd": 0.01381,
+   "lines": 419,
+   "edge": {
+    "correct": 142,
+    "total": 148,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 291,
+    "total": 298,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  },
+  {
+   "sample": 2,
+   "latency_s": 12.452,
+   "cost_usd": 0.01501,
+   "lines": 424,
+   "edge": {
+    "correct": 142,
+    "total": 148,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 286,
+    "total": 298,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  },
+  {
+   "sample": 3,
+   "latency_s": 15.352,
+   "cost_usd": 0.01352,
+   "lines": 429,
+   "edge": {
+    "correct": 0,
+    "total": 148,
+    "trace_errors": 0,
+    "crashes": 148
+   },
+   "full": {
+    "correct": 0,
+    "total": 298,
+    "trace_errors": 0,
+    "crashes": 298
+   }
+  },
+  {
+   "sample": 4,
+   "latency_s": 11.112,
+   "cost_usd": 0.01299,
+   "lines": 370,
+   "edge": {
+    "correct": 148,
+    "total": 148,
+    "trace_errors": 0,
+    "crashes": 0
+   },
+   "full": {
+    "correct": 298,
+    "total": 298,
+    "trace_errors": 0,
+    "crashes": 0
+   }
+  }
+ ]
+}

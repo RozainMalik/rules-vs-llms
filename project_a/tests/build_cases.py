@@ -9,12 +9,13 @@ Also creates official_checks.csv (30 cases for you to enter into the official
 Income Tax Department calculator). It is NEVER overwritten once it exists,
 because it holds your manual results.
 
-Run:  python -m project_a.tests.build_cases
+Run:  python -m project_a.tests.build_cases [2024-25|2025-26]
 """
 
 import csv
 import json
 import random
+from fractions import Fraction
 from pathlib import Path
 
 from project_a.tests.oracle import oracle
@@ -33,13 +34,19 @@ def full(**kw) -> dict:
     return base
 
 
-def edge_cases() -> list[tuple[str, str, dict]]:
+NEW_THRESHOLDS = {"2024-25": [300000, 700000, 1000000, 1200000, 1500000],
+                  "2025-26": [400000, 800000, 1200000, 1600000, 2000000, 2400000]}
+# 87A marginal-relief zone: relief ends where slab tax == income above the limit
+REBATE_ZONE = {"2024-25": [705000, 710000, 715000, 722220, 722230, 725000, 750000],
+               "2025-26": [1205000, 1210000, 1250000, 1270580, 1270590, 1275000, 1300000]}
+
+
+def edge_cases(fy: str = "2024-25") -> list[tuple[str, str, dict]]:
     cases: list[tuple[str, str, dict]] = []
     add = lambda cat, desc, inp: cases.append((cat, desc, inp))
 
     # --- total-income thresholds, NEW regime (gross = TI + 75,000 SD) ---------
-    for t in [300000, 700000, 1000000, 1200000, 1500000,
-              5000000, 10000000, 20000000, 50000000]:
+    for t in NEW_THRESHOLDS[fy] + [5000000, 10000000, 20000000, 50000000]:
         for d in (-10, 0, 1, 5, 10):          # +1 rounds down, +5 rounds up (Sec 288A)
             add("threshold_new", f"new-regime TI {t}{d:+d}", full(gross_salary=t + d + 75000))
 
@@ -48,14 +55,34 @@ def edge_cases() -> list[tuple[str, str, dict]]:
         for d in (-10, 0, 10):
             add("threshold_old", f"old-regime TI {t}{d:+d}", full(gross_salary=t + d + 50000))
 
-    # --- 87A marginal relief zone (new regime): relief ends near TI 7,22,222 --
-    for ti in [705000, 710000, 715000, 722220, 722230, 725000, 750000]:
+    # --- 87A marginal relief zone (new regime) --------------------------------
+    for ti in REBATE_ZONE[fy]:
         add("rebate_87a_relief", f"new-regime TI {ti}", full(gross_salary=ti + 75000))
 
     # --- surcharge marginal-relief zones --------------------------------------
     for t in [5000000, 10000000, 20000000, 50000000]:
         for d in (1000, 50000, 200000, 1000000):
             add("surcharge_relief", f"TI {t}+{d} (both regimes)", full(gross_salary=t + d + 50000))
+
+    # --- Sec 288B: unrounded tax ends in 4.50-4.99 -> paise must be DROPPED -------
+    # (rounding paise up first gives a result Rs 10 too high; found when a compiled
+    #  module regressed on this while passing every other edge case)
+    for regime in ("new", "old"):
+        found, g = 0, 1_500_000
+        while found < 3:
+            g += 10
+            r = oracle(full(gross_salary=g), fy)["raw_" + regime]
+            whole = r.numerator // r.denominator
+            if whole % 10 == 4 and r - whole >= Fraction(1, 2):
+                add("rounding_288b", f"{regime}: unrounded tax {float(r):.2f}", full(gross_salary=g))
+                found += 1
+
+    # --- age x surcharge: relief must use the SAME age's slabs at the threshold --
+    # (added after the FY25-26 compiled module got an 85-year-old at 50L+ wrong
+    #  while passing every other edge case)
+    for age in (65, 85):
+        for t in (5000000, 10000000, 20000000):
+            add("age_surcharge", f"age {age}, old TI {t}+20000", full(gross_salary=t + 20000 + 50000, age=age))
 
     # --- age bands (old-regime slabs + 80D self cap) ---------------------------
     for age in (59, 60, 79, 80):
@@ -138,16 +165,19 @@ def random_cases(n: int, seed: int = 2024) -> list[tuple[str, str, dict]]:
     return out
 
 
-def main() -> None:
-    raw = edge_cases() + random_cases(150)
+def main(fy: str = "2024-25") -> None:
+    raw = edge_cases(fy) + random_cases(150)
     cases = []
     for i, (cat, desc, inp) in enumerate(raw):
-        exp = oracle(inp)
+        exp = oracle(inp, fy)
         cases.append({"id": f"A{i:03d}", "category": cat, "description": desc, "input": inp,
                       "expected": {"old": exp["old"], "new": exp["new"]},
                       "expected_total_income": {"old": exp["ti_old"], "new": exp["ti_new"]}})
-    (HERE / "cases.json").write_text(json.dumps(cases, indent=1))
-    print(f"wrote {len(cases)} cases -> cases.json")
+    name = "cases.json" if fy == "2024-25" else f"cases_{fy.replace('-', '_')}.json"
+    (HERE / name).write_text(json.dumps(cases, indent=1))
+    print(f"wrote {len(cases)} cases -> {name}")
+    if fy != "2024-25":
+        return
 
     official = HERE / "official_checks.csv"
     if official.exists():
@@ -167,4 +197,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else "2024-25")

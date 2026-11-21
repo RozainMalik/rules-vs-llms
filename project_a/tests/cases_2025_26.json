@@ -1,0 +1,8048 @@
+[
+ {
+  "id": "A000",
+  "category": "threshold_new",
+  "description": "new-regime TI 400000-10",
+  "input": {
+   "gross_salary": 474990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 424990,
+   "new": 399990
+  }
+ },
+ {
+  "id": "A001",
+  "category": "threshold_new",
+  "description": "new-regime TI 400000+0",
+  "input": {
+   "gross_salary": 475000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 425000,
+   "new": 400000
+  }
+ },
+ {
+  "id": "A002",
+  "category": "threshold_new",
+  "description": "new-regime TI 400000+1",
+  "input": {
+   "gross_salary": 475001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 425000,
+   "new": 400000
+  }
+ },
+ {
+  "id": "A003",
+  "category": "threshold_new",
+  "description": "new-regime TI 400000+5",
+  "input": {
+   "gross_salary": 475005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 425010,
+   "new": 400010
+  }
+ },
+ {
+  "id": "A004",
+  "category": "threshold_new",
+  "description": "new-regime TI 400000+10",
+  "input": {
+   "gross_salary": 475010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 425010,
+   "new": 400010
+  }
+ },
+ {
+  "id": "A005",
+  "category": "threshold_new",
+  "description": "new-regime TI 800000-10",
+  "input": {
+   "gross_salary": 874990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 80600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 824990,
+   "new": 799990
+  }
+ },
+ {
+  "id": "A006",
+  "category": "threshold_new",
+  "description": "new-regime TI 800000+0",
+  "input": {
+   "gross_salary": 875000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 80600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 825000,
+   "new": 800000
+  }
+ },
+ {
+  "id": "A007",
+  "category": "threshold_new",
+  "description": "new-regime TI 800000+1",
+  "input": {
+   "gross_salary": 875001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 80600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 825000,
+   "new": 800000
+  }
+ },
+ {
+  "id": "A008",
+  "category": "threshold_new",
+  "description": "new-regime TI 800000+5",
+  "input": {
+   "gross_salary": 875005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 80600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 825010,
+   "new": 800010
+  }
+ },
+ {
+  "id": "A009",
+  "category": "threshold_new",
+  "description": "new-regime TI 800000+10",
+  "input": {
+   "gross_salary": 875010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 80600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 825010,
+   "new": 800010
+  }
+ },
+ {
+  "id": "A010",
+  "category": "threshold_new",
+  "description": "new-regime TI 1200000-10",
+  "input": {
+   "gross_salary": 1274990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 187200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1224990,
+   "new": 1199990
+  }
+ },
+ {
+  "id": "A011",
+  "category": "threshold_new",
+  "description": "new-regime TI 1200000+0",
+  "input": {
+   "gross_salary": 1275000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 187200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1225000,
+   "new": 1200000
+  }
+ },
+ {
+  "id": "A012",
+  "category": "threshold_new",
+  "description": "new-regime TI 1200000+1",
+  "input": {
+   "gross_salary": 1275001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 187200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1225000,
+   "new": 1200000
+  }
+ },
+ {
+  "id": "A013",
+  "category": "threshold_new",
+  "description": "new-regime TI 1200000+5",
+  "input": {
+   "gross_salary": 1275005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 187200,
+   "new": 10
+  },
+  "expected_total_income": {
+   "old": 1225010,
+   "new": 1200010
+  }
+ },
+ {
+  "id": "A014",
+  "category": "threshold_new",
+  "description": "new-regime TI 1200000+10",
+  "input": {
+   "gross_salary": 1275010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 187200,
+   "new": 10
+  },
+  "expected_total_income": {
+   "old": 1225010,
+   "new": 1200010
+  }
+ },
+ {
+  "id": "A015",
+  "category": "threshold_new",
+  "description": "new-regime TI 1600000-10",
+  "input": {
+   "gross_salary": 1674990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312000,
+   "new": 124800
+  },
+  "expected_total_income": {
+   "old": 1624990,
+   "new": 1599990
+  }
+ },
+ {
+  "id": "A016",
+  "category": "threshold_new",
+  "description": "new-regime TI 1600000+0",
+  "input": {
+   "gross_salary": 1675000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312000,
+   "new": 124800
+  },
+  "expected_total_income": {
+   "old": 1625000,
+   "new": 1600000
+  }
+ },
+ {
+  "id": "A017",
+  "category": "threshold_new",
+  "description": "new-regime TI 1600000+1",
+  "input": {
+   "gross_salary": 1675001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312000,
+   "new": 124800
+  },
+  "expected_total_income": {
+   "old": 1625000,
+   "new": 1600000
+  }
+ },
+ {
+  "id": "A018",
+  "category": "threshold_new",
+  "description": "new-regime TI 1600000+5",
+  "input": {
+   "gross_salary": 1675005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312000,
+   "new": 124800
+  },
+  "expected_total_income": {
+   "old": 1625010,
+   "new": 1600010
+  }
+ },
+ {
+  "id": "A019",
+  "category": "threshold_new",
+  "description": "new-regime TI 1600000+10",
+  "input": {
+   "gross_salary": 1675010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312000,
+   "new": 124800
+  },
+  "expected_total_income": {
+   "old": 1625010,
+   "new": 1600010
+  }
+ },
+ {
+  "id": "A020",
+  "category": "threshold_new",
+  "description": "new-regime TI 2000000-10",
+  "input": {
+   "gross_salary": 2074990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 436800,
+   "new": 208000
+  },
+  "expected_total_income": {
+   "old": 2024990,
+   "new": 1999990
+  }
+ },
+ {
+  "id": "A021",
+  "category": "threshold_new",
+  "description": "new-regime TI 2000000+0",
+  "input": {
+   "gross_salary": 2075000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 436800,
+   "new": 208000
+  },
+  "expected_total_income": {
+   "old": 2025000,
+   "new": 2000000
+  }
+ },
+ {
+  "id": "A022",
+  "category": "threshold_new",
+  "description": "new-regime TI 2000000+1",
+  "input": {
+   "gross_salary": 2075001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 436800,
+   "new": 208000
+  },
+  "expected_total_income": {
+   "old": 2025000,
+   "new": 2000000
+  }
+ },
+ {
+  "id": "A023",
+  "category": "threshold_new",
+  "description": "new-regime TI 2000000+5",
+  "input": {
+   "gross_salary": 2075005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 436800,
+   "new": 208000
+  },
+  "expected_total_income": {
+   "old": 2025010,
+   "new": 2000010
+  }
+ },
+ {
+  "id": "A024",
+  "category": "threshold_new",
+  "description": "new-regime TI 2000000+10",
+  "input": {
+   "gross_salary": 2075010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 436800,
+   "new": 208000
+  },
+  "expected_total_income": {
+   "old": 2025010,
+   "new": 2000010
+  }
+ },
+ {
+  "id": "A025",
+  "category": "threshold_new",
+  "description": "new-regime TI 2400000-10",
+  "input": {
+   "gross_salary": 2474990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 561600,
+   "new": 312000
+  },
+  "expected_total_income": {
+   "old": 2424990,
+   "new": 2399990
+  }
+ },
+ {
+  "id": "A026",
+  "category": "threshold_new",
+  "description": "new-regime TI 2400000+0",
+  "input": {
+   "gross_salary": 2475000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 561600,
+   "new": 312000
+  },
+  "expected_total_income": {
+   "old": 2425000,
+   "new": 2400000
+  }
+ },
+ {
+  "id": "A027",
+  "category": "threshold_new",
+  "description": "new-regime TI 2400000+1",
+  "input": {
+   "gross_salary": 2475001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 561600,
+   "new": 312000
+  },
+  "expected_total_income": {
+   "old": 2425000,
+   "new": 2400000
+  }
+ },
+ {
+  "id": "A028",
+  "category": "threshold_new",
+  "description": "new-regime TI 2400000+5",
+  "input": {
+   "gross_salary": 2475005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 561600,
+   "new": 312000
+  },
+  "expected_total_income": {
+   "old": 2425010,
+   "new": 2400010
+  }
+ },
+ {
+  "id": "A029",
+  "category": "threshold_new",
+  "description": "new-regime TI 2400000+10",
+  "input": {
+   "gross_salary": 2475010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 561600,
+   "new": 312000
+  },
+  "expected_total_income": {
+   "old": 2425010,
+   "new": 2400010
+  }
+ },
+ {
+  "id": "A030",
+  "category": "threshold_new",
+  "description": "new-regime TI 5000000-10",
+  "input": {
+   "gross_salary": 5074990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1390990,
+   "new": 1123200
+  },
+  "expected_total_income": {
+   "old": 5024990,
+   "new": 4999990
+  }
+ },
+ {
+  "id": "A031",
+  "category": "threshold_new",
+  "description": "new-regime TI 5000000+0",
+  "input": {
+   "gross_salary": 5075000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1391000,
+   "new": 1123200
+  },
+  "expected_total_income": {
+   "old": 5025000,
+   "new": 5000000
+  }
+ },
+ {
+  "id": "A032",
+  "category": "threshold_new",
+  "description": "new-regime TI 5000000+1",
+  "input": {
+   "gross_salary": 5075001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1391000,
+   "new": 1123200
+  },
+  "expected_total_income": {
+   "old": 5025000,
+   "new": 5000000
+  }
+ },
+ {
+  "id": "A033",
+  "category": "threshold_new",
+  "description": "new-regime TI 5000000+5",
+  "input": {
+   "gross_salary": 5075005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1391010,
+   "new": 1123210
+  },
+  "expected_total_income": {
+   "old": 5025010,
+   "new": 5000010
+  }
+ },
+ {
+  "id": "A034",
+  "category": "threshold_new",
+  "description": "new-regime TI 5000000+10",
+  "input": {
+   "gross_salary": 5075010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1391010,
+   "new": 1123210
+  },
+  "expected_total_income": {
+   "old": 5025010,
+   "new": 5000010
+  }
+ },
+ {
+  "id": "A035",
+  "category": "threshold_new",
+  "description": "new-regime TI 10000000-10",
+  "input": {
+   "gross_salary": 10074990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3243490,
+   "new": 2951520
+  },
+  "expected_total_income": {
+   "old": 10024990,
+   "new": 9999990
+  }
+ },
+ {
+  "id": "A036",
+  "category": "threshold_new",
+  "description": "new-regime TI 10000000+0",
+  "input": {
+   "gross_salary": 10075000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3243500,
+   "new": 2951520
+  },
+  "expected_total_income": {
+   "old": 10025000,
+   "new": 10000000
+  }
+ },
+ {
+  "id": "A037",
+  "category": "threshold_new",
+  "description": "new-regime TI 10000000+1",
+  "input": {
+   "gross_salary": 10075001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3243500,
+   "new": 2951520
+  },
+  "expected_total_income": {
+   "old": 10025000,
+   "new": 10000000
+  }
+ },
+ {
+  "id": "A038",
+  "category": "threshold_new",
+  "description": "new-regime TI 10000000+5",
+  "input": {
+   "gross_salary": 10075005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3243510,
+   "new": 2951530
+  },
+  "expected_total_income": {
+   "old": 10025010,
+   "new": 10000010
+  }
+ },
+ {
+  "id": "A039",
+  "category": "threshold_new",
+  "description": "new-regime TI 10000000+10",
+  "input": {
+   "gross_salary": 10075010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3243510,
+   "new": 2951530
+  },
+  "expected_total_income": {
+   "old": 10025010,
+   "new": 10000010
+  }
+ },
+ {
+  "id": "A040",
+  "category": "threshold_new",
+  "description": "new-regime TI 20000000-10",
+  "input": {
+   "gross_salary": 20074990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6977740,
+   "new": 6673680
+  },
+  "expected_total_income": {
+   "old": 20024990,
+   "new": 19999990
+  }
+ },
+ {
+  "id": "A041",
+  "category": "threshold_new",
+  "description": "new-regime TI 20000000+0",
+  "input": {
+   "gross_salary": 20075000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6977750,
+   "new": 6673680
+  },
+  "expected_total_income": {
+   "old": 20025000,
+   "new": 20000000
+  }
+ },
+ {
+  "id": "A042",
+  "category": "threshold_new",
+  "description": "new-regime TI 20000000+1",
+  "input": {
+   "gross_salary": 20075001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6977750,
+   "new": 6673680
+  },
+  "expected_total_income": {
+   "old": 20025000,
+   "new": 20000000
+  }
+ },
+ {
+  "id": "A043",
+  "category": "threshold_new",
+  "description": "new-regime TI 20000000+5",
+  "input": {
+   "gross_salary": 20075005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6977760,
+   "new": 6673690
+  },
+  "expected_total_income": {
+   "old": 20025010,
+   "new": 20000010
+  }
+ },
+ {
+  "id": "A044",
+  "category": "threshold_new",
+  "description": "new-regime TI 20000000+10",
+  "input": {
+   "gross_salary": 20075010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6977760,
+   "new": 6673690
+  },
+  "expected_total_income": {
+   "old": 20025010,
+   "new": 20000010
+  }
+ },
+ {
+  "id": "A045",
+  "category": "threshold_new",
+  "description": "new-regime TI 50000000-10",
+  "input": {
+   "gross_salary": 50074990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19282240,
+   "new": 18954000
+  },
+  "expected_total_income": {
+   "old": 50024990,
+   "new": 49999990
+  }
+ },
+ {
+  "id": "A046",
+  "category": "threshold_new",
+  "description": "new-regime TI 50000000+0",
+  "input": {
+   "gross_salary": 50075000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19282250,
+   "new": 18954000
+  },
+  "expected_total_income": {
+   "old": 50025000,
+   "new": 50000000
+  }
+ },
+ {
+  "id": "A047",
+  "category": "threshold_new",
+  "description": "new-regime TI 50000000+1",
+  "input": {
+   "gross_salary": 50075001,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19282250,
+   "new": 18954000
+  },
+  "expected_total_income": {
+   "old": 50025000,
+   "new": 50000000
+  }
+ },
+ {
+  "id": "A048",
+  "category": "threshold_new",
+  "description": "new-regime TI 50000000+5",
+  "input": {
+   "gross_salary": 50075005,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19282260,
+   "new": 18954000
+  },
+  "expected_total_income": {
+   "old": 50025010,
+   "new": 50000010
+  }
+ },
+ {
+  "id": "A049",
+  "category": "threshold_new",
+  "description": "new-regime TI 50000000+10",
+  "input": {
+   "gross_salary": 50075010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19282260,
+   "new": 18954000
+  },
+  "expected_total_income": {
+   "old": 50025010,
+   "new": 50000010
+  }
+ },
+ {
+  "id": "A050",
+  "category": "threshold_old",
+  "description": "old-regime TI 250000-10",
+  "input": {
+   "gross_salary": 299990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 249990,
+   "new": 224990
+  }
+ },
+ {
+  "id": "A051",
+  "category": "threshold_old",
+  "description": "old-regime TI 250000+0",
+  "input": {
+   "gross_salary": 300000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 250000,
+   "new": 225000
+  }
+ },
+ {
+  "id": "A052",
+  "category": "threshold_old",
+  "description": "old-regime TI 250000+10",
+  "input": {
+   "gross_salary": 300010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 250010,
+   "new": 225010
+  }
+ },
+ {
+  "id": "A053",
+  "category": "threshold_old",
+  "description": "old-regime TI 500000-10",
+  "input": {
+   "gross_salary": 549990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 499990,
+   "new": 474990
+  }
+ },
+ {
+  "id": "A054",
+  "category": "threshold_old",
+  "description": "old-regime TI 500000+0",
+  "input": {
+   "gross_salary": 550000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 500000,
+   "new": 475000
+  }
+ },
+ {
+  "id": "A055",
+  "category": "threshold_old",
+  "description": "old-regime TI 500000+10",
+  "input": {
+   "gross_salary": 550010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 13000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 500010,
+   "new": 475010
+  }
+ },
+ {
+  "id": "A056",
+  "category": "threshold_old",
+  "description": "old-regime TI 1000000-10",
+  "input": {
+   "gross_salary": 1049990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 999990,
+   "new": 974990
+  }
+ },
+ {
+  "id": "A057",
+  "category": "threshold_old",
+  "description": "old-regime TI 1000000+0",
+  "input": {
+   "gross_salary": 1050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000000,
+   "new": 975000
+  }
+ },
+ {
+  "id": "A058",
+  "category": "threshold_old",
+  "description": "old-regime TI 1000000+10",
+  "input": {
+   "gross_salary": 1050010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000010,
+   "new": 975010
+  }
+ },
+ {
+  "id": "A059",
+  "category": "threshold_old",
+  "description": "old-regime TI 5000000-10",
+  "input": {
+   "gross_salary": 5049990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1365000,
+   "new": 1115400
+  },
+  "expected_total_income": {
+   "old": 4999990,
+   "new": 4974990
+  }
+ },
+ {
+  "id": "A060",
+  "category": "threshold_old",
+  "description": "old-regime TI 5000000+0",
+  "input": {
+   "gross_salary": 5050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1365000,
+   "new": 1115400
+  },
+  "expected_total_income": {
+   "old": 5000000,
+   "new": 4975000
+  }
+ },
+ {
+  "id": "A061",
+  "category": "threshold_old",
+  "description": "old-regime TI 5000000+10",
+  "input": {
+   "gross_salary": 5050010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1365010,
+   "new": 1115400
+  },
+  "expected_total_income": {
+   "old": 5000010,
+   "new": 4975010
+  }
+ },
+ {
+  "id": "A062",
+  "category": "threshold_old",
+  "description": "old-regime TI 10000000-10",
+  "input": {
+   "gross_salary": 10049990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3217500,
+   "new": 2942940
+  },
+  "expected_total_income": {
+   "old": 9999990,
+   "new": 9974990
+  }
+ },
+ {
+  "id": "A063",
+  "category": "threshold_old",
+  "description": "old-regime TI 10000000+0",
+  "input": {
+   "gross_salary": 10050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3217500,
+   "new": 2942940
+  },
+  "expected_total_income": {
+   "old": 10000000,
+   "new": 9975000
+  }
+ },
+ {
+  "id": "A064",
+  "category": "threshold_old",
+  "description": "old-regime TI 10000000+10",
+  "input": {
+   "gross_salary": 10050010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3217510,
+   "new": 2942940
+  },
+  "expected_total_income": {
+   "old": 10000010,
+   "new": 9975010
+  }
+ },
+ {
+  "id": "A065",
+  "category": "threshold_old",
+  "description": "old-regime TI 20000000-10",
+  "input": {
+   "gross_salary": 20049990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6951750,
+   "new": 6664710
+  },
+  "expected_total_income": {
+   "old": 19999990,
+   "new": 19974990
+  }
+ },
+ {
+  "id": "A066",
+  "category": "threshold_old",
+  "description": "old-regime TI 20000000+0",
+  "input": {
+   "gross_salary": 20050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6951750,
+   "new": 6664710
+  },
+  "expected_total_income": {
+   "old": 20000000,
+   "new": 19975000
+  }
+ },
+ {
+  "id": "A067",
+  "category": "threshold_old",
+  "description": "old-regime TI 20000000+10",
+  "input": {
+   "gross_salary": 20050010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6951760,
+   "new": 6664710
+  },
+  "expected_total_income": {
+   "old": 20000010,
+   "new": 19975010
+  }
+ },
+ {
+  "id": "A068",
+  "category": "threshold_old",
+  "description": "old-regime TI 50000000-10",
+  "input": {
+   "gross_salary": 50049990,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19256250,
+   "new": 18944250
+  },
+  "expected_total_income": {
+   "old": 49999990,
+   "new": 49974990
+  }
+ },
+ {
+  "id": "A069",
+  "category": "threshold_old",
+  "description": "old-regime TI 50000000+0",
+  "input": {
+   "gross_salary": 50050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19256250,
+   "new": 18944250
+  },
+  "expected_total_income": {
+   "old": 50000000,
+   "new": 49975000
+  }
+ },
+ {
+  "id": "A070",
+  "category": "threshold_old",
+  "description": "old-regime TI 50000000+10",
+  "input": {
+   "gross_salary": 50050010,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19256260,
+   "new": 18944250
+  },
+  "expected_total_income": {
+   "old": 50000010,
+   "new": 49975010
+  }
+ },
+ {
+  "id": "A071",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1205000",
+  "input": {
+   "gross_salary": 1280000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 188760,
+   "new": 5200
+  },
+  "expected_total_income": {
+   "old": 1230000,
+   "new": 1205000
+  }
+ },
+ {
+  "id": "A072",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1210000",
+  "input": {
+   "gross_salary": 1285000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 190320,
+   "new": 10400
+  },
+  "expected_total_income": {
+   "old": 1235000,
+   "new": 1210000
+  }
+ },
+ {
+  "id": "A073",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1250000",
+  "input": {
+   "gross_salary": 1325000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 202800,
+   "new": 52000
+  },
+  "expected_total_income": {
+   "old": 1275000,
+   "new": 1250000
+  }
+ },
+ {
+  "id": "A074",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1270580",
+  "input": {
+   "gross_salary": 1345580,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 209220,
+   "new": 73400
+  },
+  "expected_total_income": {
+   "old": 1295580,
+   "new": 1270580
+  }
+ },
+ {
+  "id": "A075",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1270590",
+  "input": {
+   "gross_salary": 1345590,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 209220,
+   "new": 73410
+  },
+  "expected_total_income": {
+   "old": 1295590,
+   "new": 1270590
+  }
+ },
+ {
+  "id": "A076",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1275000",
+  "input": {
+   "gross_salary": 1350000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 210600,
+   "new": 74100
+  },
+  "expected_total_income": {
+   "old": 1300000,
+   "new": 1275000
+  }
+ },
+ {
+  "id": "A077",
+  "category": "rebate_87a_relief",
+  "description": "new-regime TI 1300000",
+  "input": {
+   "gross_salary": 1375000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 218400,
+   "new": 78000
+  },
+  "expected_total_income": {
+   "old": 1325000,
+   "new": 1300000
+  }
+ },
+ {
+  "id": "A078",
+  "category": "surcharge_relief",
+  "description": "TI 5000000+1000 (both regimes)",
+  "input": {
+   "gross_salary": 5051000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1366040,
+   "new": 1115710
+  },
+  "expected_total_income": {
+   "old": 5001000,
+   "new": 4976000
+  }
+ },
+ {
+  "id": "A079",
+  "category": "surcharge_relief",
+  "description": "TI 5000000+50000 (both regimes)",
+  "input": {
+   "gross_salary": 5100000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1417000,
+   "new": 1149200
+  },
+  "expected_total_income": {
+   "old": 5050000,
+   "new": 5025000
+  }
+ },
+ {
+  "id": "A080",
+  "category": "surcharge_relief",
+  "description": "TI 5000000+200000 (both regimes)",
+  "input": {
+   "gross_salary": 5250000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1570140,
+   "new": 1295580
+  },
+  "expected_total_income": {
+   "old": 5200000,
+   "new": 5175000
+  }
+ },
+ {
+  "id": "A081",
+  "category": "surcharge_relief",
+  "description": "TI 5000000+1000000 (both regimes)",
+  "input": {
+   "gross_salary": 6050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1844700,
+   "new": 1570140
+  },
+  "expected_total_income": {
+   "old": 6000000,
+   "new": 5975000
+  }
+ },
+ {
+  "id": "A082",
+  "category": "surcharge_relief",
+  "description": "TI 10000000+1000 (both regimes)",
+  "input": {
+   "gross_salary": 10051000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3218540,
+   "new": 2943280
+  },
+  "expected_total_income": {
+   "old": 10001000,
+   "new": 9976000
+  }
+ },
+ {
+  "id": "A083",
+  "category": "surcharge_relief",
+  "description": "TI 10000000+50000 (both regimes)",
+  "input": {
+   "gross_salary": 10100000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3269500,
+   "new": 2977520
+  },
+  "expected_total_income": {
+   "old": 10050000,
+   "new": 10025000
+  }
+ },
+ {
+  "id": "A084",
+  "category": "surcharge_relief",
+  "description": "TI 10000000+200000 (both regimes)",
+  "input": {
+   "gross_salary": 10250000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3425500,
+   "new": 3133520
+  },
+  "expected_total_income": {
+   "old": 10200000,
+   "new": 10175000
+  }
+ },
+ {
+  "id": "A085",
+  "category": "surcharge_relief",
+  "description": "TI 10000000+1000000 (both regimes)",
+  "input": {
+   "gross_salary": 11050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3722550,
+   "new": 3435510
+  },
+  "expected_total_income": {
+   "old": 11000000,
+   "new": 10975000
+  }
+ },
+ {
+  "id": "A086",
+  "category": "surcharge_relief",
+  "description": "TI 20000000+1000 (both regimes)",
+  "input": {
+   "gross_salary": 20051000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6952790,
+   "new": 6665070
+  },
+  "expected_total_income": {
+   "old": 20001000,
+   "new": 19976000
+  }
+ },
+ {
+  "id": "A087",
+  "category": "surcharge_relief",
+  "description": "TI 20000000+50000 (both regimes)",
+  "input": {
+   "gross_salary": 20100000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 7003750,
+   "new": 6699680
+  },
+  "expected_total_income": {
+   "old": 20050000,
+   "new": 20025000
+  }
+ },
+ {
+  "id": "A088",
+  "category": "surcharge_relief",
+  "description": "TI 20000000+200000 (both regimes)",
+  "input": {
+   "gross_salary": 20250000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 7159750,
+   "new": 6855680
+  },
+  "expected_total_income": {
+   "old": 20200000,
+   "new": 20175000
+  }
+ },
+ {
+  "id": "A089",
+  "category": "surcharge_relief",
+  "description": "TI 20000000+1000000 (both regimes)",
+  "input": {
+   "gross_salary": 21050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 7946250,
+   "new": 7634250
+  },
+  "expected_total_income": {
+   "old": 21000000,
+   "new": 20975000
+  }
+ },
+ {
+  "id": "A090",
+  "category": "surcharge_relief",
+  "description": "TI 50000000+1000 (both regimes)",
+  "input": {
+   "gross_salary": 50051000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19257290,
+   "new": 18944640
+  },
+  "expected_total_income": {
+   "old": 50001000,
+   "new": 49976000
+  }
+ },
+ {
+  "id": "A091",
+  "category": "surcharge_relief",
+  "description": "TI 50000000+50000 (both regimes)",
+  "input": {
+   "gross_salary": 50100000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19308250,
+   "new": 18963750
+  },
+  "expected_total_income": {
+   "old": 50050000,
+   "new": 50025000
+  }
+ },
+ {
+  "id": "A092",
+  "category": "surcharge_relief",
+  "description": "TI 50000000+200000 (both regimes)",
+  "input": {
+   "gross_salary": 50250000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19464250,
+   "new": 19022250
+  },
+  "expected_total_income": {
+   "old": 50200000,
+   "new": 50175000
+  }
+ },
+ {
+  "id": "A093",
+  "category": "surcharge_relief",
+  "description": "TI 50000000+1000000 (both regimes)",
+  "input": {
+   "gross_salary": 51050000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 20296250,
+   "new": 19334250
+  },
+  "expected_total_income": {
+   "old": 51000000,
+   "new": 50975000
+  }
+ },
+ {
+  "id": "A094",
+  "category": "rounding_288b",
+  "description": "new: unrounded tax 97504.68",
+  "input": {
+   "gross_salary": 1500030,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257410,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1450030,
+   "new": 1425030
+  }
+ },
+ {
+  "id": "A095",
+  "category": "rounding_288b",
+  "description": "new: unrounded tax 97524.96",
+  "input": {
+   "gross_salary": 1500160,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257450,
+   "new": 97520
+  },
+  "expected_total_income": {
+   "old": 1450160,
+   "new": 1425160
+  }
+ },
+ {
+  "id": "A096",
+  "category": "rounding_288b",
+  "description": "new: unrounded tax 97554.60",
+  "input": {
+   "gross_salary": 1500350,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257510,
+   "new": 97550
+  },
+  "expected_total_income": {
+   "old": 1450350,
+   "new": 1425350
+  }
+ },
+ {
+  "id": "A097",
+  "category": "rounding_288b",
+  "description": "old: unrounded tax 257424.96",
+  "input": {
+   "gross_salary": 1500080,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257420,
+   "new": 97510
+  },
+  "expected_total_income": {
+   "old": 1450080,
+   "new": 1425080
+  }
+ },
+ {
+  "id": "A098",
+  "category": "rounding_288b",
+  "description": "old: unrounded tax 257474.88",
+  "input": {
+   "gross_salary": 1500240,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257470,
+   "new": 97540
+  },
+  "expected_total_income": {
+   "old": 1450240,
+   "new": 1425240
+  }
+ },
+ {
+  "id": "A099",
+  "category": "rounding_288b",
+  "description": "old: unrounded tax 257524.80",
+  "input": {
+   "gross_salary": 1500400,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257520,
+   "new": 97560
+  },
+  "expected_total_income": {
+   "old": 1450400,
+   "new": 1425400
+  }
+ },
+ {
+  "id": "A100",
+  "category": "age_surcharge",
+  "description": "age 65, old TI 5000000+20000",
+  "input": {
+   "gross_salary": 5070000,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1383200,
+   "new": 1121640
+  },
+  "expected_total_income": {
+   "old": 5020000,
+   "new": 4995000
+  }
+ },
+ {
+  "id": "A101",
+  "category": "age_surcharge",
+  "description": "age 65, old TI 10000000+20000",
+  "input": {
+   "gross_salary": 10070000,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3235440,
+   "new": 2949800
+  },
+  "expected_total_income": {
+   "old": 10020000,
+   "new": 9995000
+  }
+ },
+ {
+  "id": "A102",
+  "category": "age_surcharge",
+  "description": "age 65, old TI 20000000+20000",
+  "input": {
+   "gross_salary": 20070000,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6969560,
+   "new": 6671890
+  },
+  "expected_total_income": {
+   "old": 20020000,
+   "new": 19995000
+  }
+ },
+ {
+  "id": "A103",
+  "category": "age_surcharge",
+  "description": "age 85, old TI 5000000+20000",
+  "input": {
+   "gross_salary": 5070000,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1372800,
+   "new": 1121640
+  },
+  "expected_total_income": {
+   "old": 5020000,
+   "new": 4995000
+  }
+ },
+ {
+  "id": "A104",
+  "category": "age_surcharge",
+  "description": "age 85, old TI 10000000+20000",
+  "input": {
+   "gross_salary": 10070000,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3224000,
+   "new": 2949800
+  },
+  "expected_total_income": {
+   "old": 10020000,
+   "new": 9995000
+  }
+ },
+ {
+  "id": "A105",
+  "category": "age_surcharge",
+  "description": "age 85, old TI 20000000+20000",
+  "input": {
+   "gross_salary": 20070000,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6957600,
+   "new": 6671890
+  },
+  "expected_total_income": {
+   "old": 20020000,
+   "new": 19995000
+  }
+ },
+ {
+  "id": "A106",
+  "category": "age_band",
+  "description": "age 59, TI 6L old",
+  "input": {
+   "gross_salary": 650000,
+   "age": 59,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 33800,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 600000,
+   "new": 575000
+  }
+ },
+ {
+  "id": "A107",
+  "category": "age_band",
+  "description": "age 59, 80D self 60k",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 59,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 60000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A108",
+  "category": "age_band",
+  "description": "age 60, TI 6L old",
+  "input": {
+   "gross_salary": 650000,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 31200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 600000,
+   "new": 575000
+  }
+ },
+ {
+  "id": "A109",
+  "category": "age_band",
+  "description": "age 60, 80D self 60k",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 60000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 145600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A110",
+  "category": "age_band",
+  "description": "age 79, TI 6L old",
+  "input": {
+   "gross_salary": 650000,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 31200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 600000,
+   "new": 575000
+  }
+ },
+ {
+  "id": "A111",
+  "category": "age_band",
+  "description": "age 79, 80D self 60k",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 60000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 145600,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A112",
+  "category": "age_band",
+  "description": "age 80, TI 6L old",
+  "input": {
+   "gross_salary": 650000,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 20800,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 600000,
+   "new": 575000
+  }
+ },
+ {
+  "id": "A113",
+  "category": "age_band",
+  "description": "age 80, 80D self 60k",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 60000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 135200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A114",
+  "category": "cap_80c",
+  "description": "80C 149999",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 149999,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A115",
+  "category": "cap_80c",
+  "description": "80C 150000",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A116",
+  "category": "cap_80c",
+  "description": "80C 150001",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150001,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A117",
+  "category": "cap_80c",
+  "description": "80C 300000",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 300000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 117000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1000000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A118",
+  "category": "cap_80ccd_1b",
+  "description": "80CCD(1B) 49999",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 49999,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A119",
+  "category": "cap_80ccd_1b",
+  "description": "80CCD(1B) 50000",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A120",
+  "category": "cap_80ccd_1b",
+  "description": "80CCD(1B) 50001",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50001,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A121",
+  "category": "cap_80ccd_1b",
+  "description": "80CCD(1B) 100000",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 100000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A122",
+  "category": "cap_80d_self",
+  "description": "80D self 24999",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 24999,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A123",
+  "category": "cap_80d_self",
+  "description": "80D self 25000",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 25000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A124",
+  "category": "cap_80d_self",
+  "description": "80D self 25001",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 25001,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A125",
+  "category": "cap_80d_parents",
+  "description": "80D parents 25000 senior=False",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 25000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A126",
+  "category": "cap_80d_parents",
+  "description": "80D parents 25001 senior=False",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 25001,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 156000,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1125000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A127",
+  "category": "cap_80d_parents",
+  "description": "80D parents 50000 senior=True",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 50000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A128",
+  "category": "cap_80d_parents",
+  "description": "80D parents 50001 senior=True",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 50001,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 148200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A129",
+  "category": "cap_80d_parents",
+  "description": "80D parents 40000 senior=True",
+  "input": {
+   "gross_salary": 1200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 40000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 151320,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 1110000,
+   "new": 1125000
+  }
+ },
+ {
+  "id": "A130",
+  "category": "cap_24b",
+  "description": "home-loan interest 199999",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 199999,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 195000,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1250000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A131",
+  "category": "cap_24b",
+  "description": "home-loan interest 200000",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 200000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 195000,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1250000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A132",
+  "category": "cap_24b",
+  "description": "home-loan interest 200001",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 200001,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 195000,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1250000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A133",
+  "category": "cap_24b",
+  "description": "home-loan interest 350000",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 350000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 195000,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1250000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A134",
+  "category": "hra",
+  "description": "limb1 binds: HRA received smallest",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 100000,
+   "basic_plus_da": 700000,
+   "rent_paid": 400000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 226200,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1350000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A135",
+  "category": "hra",
+  "description": "limb2 binds: rent-10% smallest",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 350000,
+   "basic_plus_da": 700000,
+   "rent_paid": 200000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 216840,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1320000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A136",
+  "category": "hra",
+  "description": "limb3 binds: 50% metro",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 500000,
+   "basic_plus_da": 700000,
+   "rent_paid": 800000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 148200,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1100000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A137",
+  "category": "hra",
+  "description": "limb3 binds: 40% non-metro",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 500000,
+   "basic_plus_da": 700000,
+   "rent_paid": 800000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 170040,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1170000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A138",
+  "category": "hra",
+  "description": "rent below 10% of salary -> 0 exemption",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 300000,
+   "basic_plus_da": 700000,
+   "rent_paid": 60000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257400,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1450000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A139",
+  "category": "hra",
+  "description": "rent exactly 10% of salary -> 0 exemption",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 300000,
+   "basic_plus_da": 700000,
+   "rent_paid": 70000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257400,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1450000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A140",
+  "category": "hra",
+  "description": "HRA received but no rent paid",
+  "input": {
+   "gross_salary": 1500000,
+   "age": 30,
+   "hra_received": 300000,
+   "basic_plus_da": 700000,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 257400,
+   "new": 97500
+  },
+  "expected_total_income": {
+   "old": 1450000,
+   "new": 1425000
+  }
+ },
+ {
+  "id": "A141",
+  "category": "degenerate",
+  "description": "zero salary",
+  "input": {
+   "gross_salary": 0,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 0
+  }
+ },
+ {
+  "id": "A142",
+  "category": "degenerate",
+  "description": "salary below standard deduction",
+  "input": {
+   "gross_salary": 40000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 0
+  }
+ },
+ {
+  "id": "A143",
+  "category": "degenerate",
+  "description": "deductions exceed income (Sec 80A(2))",
+  "input": {
+   "gross_salary": 250000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 25000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 175000
+  }
+ },
+ {
+  "id": "A144",
+  "category": "degenerate",
+  "description": "home-loan loss exceeds salary income",
+  "input": {
+   "gross_salary": 200000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 200000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 125000
+  }
+ },
+ {
+  "id": "A145",
+  "category": "combined",
+  "description": "metro renter maxing deductions",
+  "input": {
+   "gross_salary": 1800000,
+   "age": 30,
+   "hra_received": 360000,
+   "basic_plus_da": 900000,
+   "rent_paid": 300000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 20000,
+   "health_ins_parents": 40000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 204360,
+   "new": 150800
+  },
+  "expected_total_income": {
+   "old": 1280000,
+   "new": 1725000
+  }
+ },
+ {
+  "id": "A146",
+  "category": "combined",
+  "description": "home owner with loan",
+  "input": {
+   "gross_salary": 2500000,
+   "age": 30,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 200000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 25000,
+   "health_ins_parents": 50000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 421200,
+   "new": 319800
+  },
+  "expected_total_income": {
+   "old": 1975000,
+   "new": 2425000
+  }
+ },
+ {
+  "id": "A147",
+  "category": "combined",
+  "description": "senior employee 62",
+  "input": {
+   "gross_salary": 1100000,
+   "age": 62,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 50000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 83200,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 850000,
+   "new": 1025000
+  }
+ },
+ {
+  "id": "A148",
+  "category": "random",
+  "description": "random #0",
+  "input": {
+   "gross_salary": 3708800,
+   "age": 60,
+   "hra_received": 927200,
+   "basic_plus_da": 1854400,
+   "rent_paid": 605000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 328000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 51500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 735040,
+   "new": 696950
+  },
+  "expected_total_income": {
+   "old": 2989240,
+   "new": 3633800
+  }
+ },
+ {
+  "id": "A149",
+  "category": "random",
+  "description": "random #1",
+  "input": {
+   "gross_salary": 15884000,
+   "age": 85,
+   "hra_received": 3176800,
+   "basic_plus_da": 6353600,
+   "rent_paid": 786000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 5352110,
+   "new": 5169950
+  },
+  "expected_total_income": {
+   "old": 15583360,
+   "new": 15809000
+  }
+ },
+ {
+  "id": "A150",
+  "category": "random",
+  "description": "random #2",
+  "input": {
+   "gross_salary": 3613000,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 31500,
+   "health_ins_parents": 23500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 854720,
+   "new": 667060
+  },
+  "expected_total_income": {
+   "old": 3364500,
+   "new": 3538000
+  }
+ },
+ {
+  "id": "A151",
+  "category": "random",
+  "description": "random #3",
+  "input": {
+   "gross_salary": 711400,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 41000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 30970,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 586400,
+   "new": 636400
+  }
+ },
+ {
+  "id": "A152",
+  "category": "random",
+  "description": "random #4",
+  "input": {
+   "gross_salary": 400300,
+   "age": 58,
+   "hra_received": 100075,
+   "basic_plus_da": 200150,
+   "rent_paid": 199000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 50000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 75230,
+   "new": 325300
+  }
+ },
+ {
+  "id": "A153",
+  "category": "random",
+  "description": "random #5",
+  "input": {
+   "gross_salary": 573400,
+   "age": 45,
+   "hra_received": 91744,
+   "basic_plus_da": 229360,
+   "rent_paid": 160000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 19500,
+   "health_ins_parents": 61000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 262160,
+   "new": 498400
+  }
+ },
+ {
+  "id": "A154",
+  "category": "random",
+  "description": "random #6",
+  "input": {
+   "gross_salary": 8406200,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 22500,
+   "health_ins_parents": 52000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2562690,
+   "new": 2378790
+  },
+  "expected_total_income": {
+   "old": 8133700,
+   "new": 8331200
+  }
+ },
+ {
+  "id": "A155",
+  "category": "random",
+  "description": "random #7",
+  "input": {
+   "gross_salary": 4336000,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 67500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1087630,
+   "new": 892630
+  },
+  "expected_total_income": {
+   "old": 4111000,
+   "new": 4261000
+  }
+ },
+ {
+  "id": "A156",
+  "category": "random",
+  "description": "random #8",
+  "input": {
+   "gross_salary": 67228900,
+   "age": 35,
+   "hra_received": 10756624,
+   "basic_plus_da": 26891560,
+   "rent_paid": 275000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 36000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 28415740,
+   "new": 25644020
+  },
+  "expected_total_income": {
+   "old": 67103900,
+   "new": 67153900
+  }
+ },
+ {
+  "id": "A157",
+  "category": "random",
+  "description": "random #9",
+  "input": {
+   "gross_salary": 546300,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 105000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 391300,
+   "new": 471300
+  }
+ },
+ {
+  "id": "A158",
+  "category": "random",
+  "description": "random #10",
+  "input": {
+   "gross_salary": 6487600,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 59500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1903360,
+   "new": 1720320
+  },
+  "expected_total_income": {
+   "old": 6212600,
+   "new": 6412600
+  }
+ },
+ {
+  "id": "A159",
+  "category": "random",
+  "description": "random #11",
+  "input": {
+   "gross_salary": 737000,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 33000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 462000,
+   "new": 662000
+  }
+ },
+ {
+  "id": "A160",
+  "category": "random",
+  "description": "random #12",
+  "input": {
+   "gross_salary": 770200,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 30000,
+   "health_ins_parents": 21000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 14390,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 569200,
+   "new": 695200
+  }
+ },
+ {
+  "id": "A161",
+  "category": "random",
+  "description": "random #13",
+  "input": {
+   "gross_salary": 418700,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 39500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 329200,
+   "new": 343700
+  }
+ },
+ {
+  "id": "A162",
+  "category": "random",
+  "description": "random #14",
+  "input": {
+   "gross_salary": 272100,
+   "age": 65,
+   "hra_received": 68025,
+   "basic_plus_da": 136050,
+   "rent_paid": 742000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 223000,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 66000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 197100
+  }
+ },
+ {
+  "id": "A163",
+  "category": "random",
+  "description": "random #15",
+  "input": {
+   "gross_salary": 1349200,
+   "age": 60,
+   "hra_received": 337300,
+   "basic_plus_da": 674600,
+   "rent_paid": 504000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 98000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 32000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 67470,
+   "new": 73980
+  },
+  "expected_total_income": {
+   "old": 774360,
+   "new": 1274200
+  }
+ },
+ {
+  "id": "A164",
+  "category": "random",
+  "description": "random #16",
+  "input": {
+   "gross_salary": 279700,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 348000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 12500,
+   "health_ins_parents": 65500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 204700
+  }
+ },
+ {
+  "id": "A165",
+  "category": "random",
+  "description": "random #17",
+  "input": {
+   "gross_salary": 390600,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 19500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 271100,
+   "new": 315600
+  }
+ },
+ {
+  "id": "A166",
+  "category": "random",
+  "description": "random #18",
+  "input": {
+   "gross_salary": 686700,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 7630,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 536700,
+   "new": 611700
+  }
+ },
+ {
+  "id": "A167",
+  "category": "random",
+  "description": "random #19",
+  "input": {
+   "gross_salary": 53340600,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 43000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 22468070,
+   "new": 20227580
+  },
+  "expected_total_income": {
+   "old": 53197600,
+   "new": 53265600
+  }
+ },
+ {
+  "id": "A168",
+  "category": "random",
+  "description": "random #20",
+  "input": {
+   "gross_salary": 29785100,
+   "age": 58,
+   "hra_received": 7446275,
+   "basic_plus_da": 14892550,
+   "rent_paid": 353000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 315000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 62500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 11226190,
+   "new": 11040940
+  },
+  "expected_total_income": {
+   "old": 29410100,
+   "new": 29710100
+  }
+ },
+ {
+  "id": "A169",
+  "category": "random",
+  "description": "random #21",
+  "input": {
+   "gross_salary": 460700,
+   "age": 65,
+   "hra_received": 73712,
+   "basic_plus_da": 184280,
+   "rent_paid": 577000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 23000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 113990,
+   "new": 385700
+  }
+ },
+ {
+  "id": "A170",
+  "category": "random",
+  "description": "random #22",
+  "input": {
+   "gross_salary": 57550000,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 9000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 24288990,
+   "new": 21869250
+  },
+  "expected_total_income": {
+   "old": 57491000,
+   "new": 57475000
+  }
+ },
+ {
+  "id": "A171",
+  "category": "random",
+  "description": "random #23",
+  "input": {
+   "gross_salary": 374600,
+   "age": 65,
+   "hra_received": 74920,
+   "basic_plus_da": 149840,
+   "rent_paid": 93000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 264660,
+   "new": 299600
+  }
+ },
+ {
+  "id": "A172",
+  "category": "random",
+  "description": "random #24",
+  "input": {
+   "gross_salary": 566100,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 29500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 386600,
+   "new": 491100
+  }
+ },
+ {
+  "id": "A173",
+  "category": "random",
+  "description": "random #25",
+  "input": {
+   "gross_salary": 11001700,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 49000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3642430,
+   "new": 3418180
+  },
+  "expected_total_income": {
+   "old": 10776700,
+   "new": 10926700
+  }
+ },
+ {
+  "id": "A174",
+  "category": "random",
+  "description": "random #26",
+  "input": {
+   "gross_salary": 389800,
+   "age": 45,
+   "hra_received": 97450,
+   "basic_plus_da": 194900,
+   "rent_paid": 620000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 330000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 37000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 314800
+  }
+ },
+ {
+  "id": "A175",
+  "category": "random",
+  "description": "random #27",
+  "input": {
+   "gross_salary": 453200,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 6500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 296700,
+   "new": 378200
+  }
+ },
+ {
+  "id": "A176",
+  "category": "random",
+  "description": "random #28",
+  "input": {
+   "gross_salary": 90462400,
+   "age": 85,
+   "hra_received": 18092480,
+   "basic_plus_da": 45231200,
+   "rent_paid": 343000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 38296800,
+   "new": 34705090
+  },
+  "expected_total_income": {
+   "old": 90262400,
+   "new": 90387400
+  }
+ },
+ {
+  "id": "A177",
+  "category": "random",
+  "description": "random #29",
+  "input": {
+   "gross_salary": 242500,
+   "age": 60,
+   "hra_received": 60625,
+   "basic_plus_da": 121250,
+   "rent_paid": 575000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 275000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 167500
+  }
+ },
+ {
+  "id": "A178",
+  "category": "random",
+  "description": "random #30",
+  "input": {
+   "gross_salary": 3629100,
+   "age": 25,
+   "hra_received": 725820,
+   "basic_plus_da": 1451640,
+   "rent_paid": 110000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 307000,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 35500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 835880,
+   "new": 672080
+  },
+  "expected_total_income": {
+   "old": 3304100,
+   "new": 3554100
+  }
+ },
+ {
+  "id": "A179",
+  "category": "random",
+  "description": "random #31",
+  "input": {
+   "gross_salary": 13236100,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 4453100,
+   "new": 4219880
+  },
+  "expected_total_income": {
+   "old": 13036100,
+   "new": 13161100
+  }
+ },
+ {
+  "id": "A180",
+  "category": "random",
+  "description": "random #32",
+  "input": {
+   "gross_salary": 5718800,
+   "age": 58,
+   "hra_received": 1429700,
+   "basic_plus_da": 2859400,
+   "rent_paid": 397000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 5500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1630970,
+   "new": 1456470
+  },
+  "expected_total_income": {
+   "old": 5377240,
+   "new": 5643800
+  }
+ },
+ {
+  "id": "A181",
+  "category": "random",
+  "description": "random #33",
+  "input": {
+   "gross_salary": 673900,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 236000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 36000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 237900,
+   "new": 598900
+  }
+ },
+ {
+  "id": "A182",
+  "category": "random",
+  "description": "random #34",
+  "input": {
+   "gross_salary": 216700,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 5000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 111700,
+   "new": 141700
+  }
+ },
+ {
+  "id": "A183",
+  "category": "random",
+  "description": "random #35",
+  "input": {
+   "gross_salary": 30099800,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 11462670,
+   "new": 11163670
+  },
+  "expected_total_income": {
+   "old": 30024800,
+   "new": 30024800
+  }
+ },
+ {
+  "id": "A184",
+  "category": "random",
+  "description": "random #36",
+  "input": {
+   "gross_salary": 4336000,
+   "age": 79,
+   "hra_received": 693760,
+   "basic_plus_da": 1734400,
+   "rent_paid": 775000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 951950,
+   "new": 892630
+  },
+  "expected_total_income": {
+   "old": 3684440,
+   "new": 4261000
+  }
+ },
+ {
+  "id": "A185",
+  "category": "random",
+  "description": "random #37",
+  "input": {
+   "gross_salary": 22690700,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 8504870,
+   "new": 8274120
+  },
+  "expected_total_income": {
+   "old": 22440700,
+   "new": 22615700
+  }
+ },
+ {
+  "id": "A186",
+  "category": "random",
+  "description": "random #38",
+  "input": {
+   "gross_salary": 27197500,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 12000,
+   "health_ins_parents": 64500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 10296850,
+   "new": 10031780
+  },
+  "expected_total_income": {
+   "old": 27035500,
+   "new": 27122500
+  }
+ },
+ {
+  "id": "A187",
+  "category": "random",
+  "description": "random #39",
+  "input": {
+   "gross_salary": 16542900,
+   "age": 79,
+   "hra_received": 2646864,
+   "basic_plus_da": 6617160,
+   "rent_paid": 75000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 38000,
+   "health_ins_parents": 14500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 5644670,
+   "new": 5406360
+  },
+  "expected_total_income": {
+   "old": 16365400,
+   "new": 16467900
+  }
+ },
+ {
+  "id": "A188",
+  "category": "random",
+  "description": "random #40",
+  "input": {
+   "gross_salary": 258200,
+   "age": 65,
+   "hra_received": 51640,
+   "basic_plus_da": 129100,
+   "rent_paid": 170000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 156560,
+   "new": 183200
+  }
+ },
+ {
+  "id": "A189",
+  "category": "random",
+  "description": "random #41",
+  "input": {
+   "gross_salary": 9482300,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 39500,
+   "health_ins_parents": 68000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2971190,
+   "new": 2748110
+  },
+  "expected_total_income": {
+   "old": 9282300,
+   "new": 9407300
+  }
+ },
+ {
+  "id": "A190",
+  "category": "random",
+  "description": "random #42",
+  "input": {
+   "gross_salary": 286100,
+   "age": 58,
+   "hra_received": 57220,
+   "basic_plus_da": 114440,
+   "rent_paid": 142000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 39500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 100820,
+   "new": 211100
+  }
+ },
+ {
+  "id": "A191",
+  "category": "random",
+  "description": "random #43",
+  "input": {
+   "gross_salary": 839800,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 39480,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 639800,
+   "new": 764800
+  }
+ },
+ {
+  "id": "A192",
+  "category": "random",
+  "description": "random #44",
+  "input": {
+   "gross_salary": 50281300,
+   "age": 45,
+   "hra_received": 8045008,
+   "basic_plus_da": 20112520,
+   "rent_paid": 551000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 273000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 48000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 19262800,
+   "new": 19034460
+  },
+  "expected_total_income": {
+   "old": 50006300,
+   "new": 50206300
+  }
+ },
+ {
+  "id": "A193",
+  "category": "random",
+  "description": "random #45",
+  "input": {
+   "gross_salary": 2380900,
+   "age": 45,
+   "hra_received": 476180,
+   "basic_plus_da": 1190450,
+   "rent_paid": 805000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 317000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 41500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 261520,
+   "new": 287530
+  },
+  "expected_total_income": {
+   "old": 1463220,
+   "new": 2305900
+  }
+ },
+ {
+  "id": "A194",
+  "category": "random",
+  "description": "random #46",
+  "input": {
+   "gross_salary": 477800,
+   "age": 80,
+   "hra_received": 119450,
+   "basic_plus_da": 238900,
+   "rent_paid": 797000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 41500,
+   "health_ins_parents": 49000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 91740,
+   "new": 402800
+  }
+ },
+ {
+  "id": "A195",
+  "category": "random",
+  "description": "random #47",
+  "input": {
+   "gross_salary": 86205300,
+   "age": 79,
+   "hra_received": 21551325,
+   "basic_plus_da": 43102650,
+   "rent_paid": 105000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 24000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 36545250,
+   "new": 33044820
+  },
+  "expected_total_income": {
+   "old": 86131300,
+   "new": 86130300
+  }
+ },
+ {
+  "id": "A196",
+  "category": "random",
+  "description": "random #48",
+  "input": {
+   "gross_salary": 3016700,
+   "age": 80,
+   "hra_received": 603340,
+   "basic_plus_da": 1206680,
+   "rent_paid": 732000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 35000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 540500,
+   "new": 481010
+  },
+  "expected_total_income": {
+   "old": 2399030,
+   "new": 2941700
+  }
+ },
+ {
+  "id": "A197",
+  "category": "random",
+  "description": "random #49",
+  "input": {
+   "gross_salary": 3034800,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 92000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 632150,
+   "new": 486660
+  },
+  "expected_total_income": {
+   "old": 2692800,
+   "new": 2959800
+  }
+ },
+ {
+  "id": "A198",
+  "category": "random",
+  "description": "random #50",
+  "input": {
+   "gross_salary": 5743700,
+   "age": 85,
+   "hra_received": 1148740,
+   "basic_plus_da": 2871850,
+   "rent_paid": 882000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1376850,
+   "new": 1465020
+  },
+  "expected_total_income": {
+   "old": 5023890,
+   "new": 5668700
+  }
+ },
+ {
+  "id": "A199",
+  "category": "random",
+  "description": "random #51",
+  "input": {
+   "gross_salary": 25758900,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 9740470,
+   "new": 9470720
+  },
+  "expected_total_income": {
+   "old": 25608900,
+   "new": 25683900
+  }
+ },
+ {
+  "id": "A200",
+  "category": "random",
+  "description": "random #52",
+  "input": {
+   "gross_salary": 22093700,
+   "age": 25,
+   "hra_received": 3534992,
+   "basic_plus_da": 8837480,
+   "rent_paid": 106000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 110000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 8271390,
+   "new": 8041290
+  },
+  "expected_total_income": {
+   "old": 21833700,
+   "new": 22018700
+  }
+ },
+ {
+  "id": "A201",
+  "category": "random",
+  "description": "random #53",
+  "input": {
+   "gross_salary": 377100,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 227100,
+   "new": 302100
+  }
+ },
+ {
+  "id": "A202",
+  "category": "random",
+  "description": "random #54",
+  "input": {
+   "gross_salary": 3873600,
+   "age": 25,
+   "hra_received": 968400,
+   "basic_plus_da": 1936800,
+   "rent_paid": 844000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 113000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 39000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 685240,
+   "new": 748360
+  },
+  "expected_total_income": {
+   "old": 2821280,
+   "new": 3798600
+  }
+ },
+ {
+  "id": "A203",
+  "category": "random",
+  "description": "random #55",
+  "input": {
+   "gross_salary": 42623900,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 15500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 16354030,
+   "new": 16048070
+  },
+  "expected_total_income": {
+   "old": 42558400,
+   "new": 42548900
+  }
+ },
+ {
+  "id": "A204",
+  "category": "random",
+  "description": "random #56",
+  "input": {
+   "gross_salary": 452000,
+   "age": 35,
+   "hra_received": 90400,
+   "basic_plus_da": 180800,
+   "rent_paid": 172000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 80000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 149680,
+   "new": 377000
+  }
+ },
+ {
+  "id": "A205",
+  "category": "random",
+  "description": "random #57",
+  "input": {
+   "gross_salary": 1095000,
+   "age": 65,
+   "hra_received": 175200,
+   "basic_plus_da": 438000,
+   "rent_paid": 648000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 45720,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 669800,
+   "new": 1020000
+  }
+ },
+ {
+  "id": "A206",
+  "category": "random",
+  "description": "random #58",
+  "input": {
+   "gross_salary": 1958600,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 16000,
+   "health_ins_parents": 62000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 312290,
+   "new": 183790
+  },
+  "expected_total_income": {
+   "old": 1667600,
+   "new": 1883600
+  }
+ },
+ {
+  "id": "A207",
+  "category": "random",
+  "description": "random #59",
+  "input": {
+   "gross_salary": 23215500,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 8790800,
+   "new": 8478800
+  },
+  "expected_total_income": {
+   "old": 23165500,
+   "new": 23140500
+  }
+ },
+ {
+  "id": "A208",
+  "category": "random",
+  "description": "random #60",
+  "input": {
+   "gross_salary": 4392500,
+   "age": 58,
+   "hra_received": 878500,
+   "basic_plus_da": 1757000,
+   "rent_paid": 443000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1045260,
+   "new": 910260
+  },
+  "expected_total_income": {
+   "old": 3975200,
+   "new": 4317500
+  }
+ },
+ {
+  "id": "A209",
+  "category": "random",
+  "description": "random #61",
+  "input": {
+   "gross_salary": 41916300,
+   "age": 35,
+   "hra_received": 8383260,
+   "basic_plus_da": 20958150,
+   "rent_paid": 372000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 12500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 16020730,
+   "new": 15772110
+  },
+  "expected_total_income": {
+   "old": 41703800,
+   "new": 41841300
+  }
+ },
+ {
+  "id": "A210",
+  "category": "random",
+  "description": "random #62",
+  "input": {
+   "gross_salary": 86004000,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 62000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 36361040,
+   "new": 32966310
+  },
+  "expected_total_income": {
+   "old": 85692000,
+   "new": 85929000
+  }
+ },
+ {
+  "id": "A211",
+  "category": "random",
+  "description": "random #63",
+  "input": {
+   "gross_salary": 405400,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 355400,
+   "new": 330400
+  }
+ },
+ {
+  "id": "A212",
+  "category": "random",
+  "description": "random #64",
+  "input": {
+   "gross_salary": 23257400,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 66000,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 14000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 8720690,
+   "new": 8495140
+  },
+  "expected_total_income": {
+   "old": 23027400,
+   "new": 23182400
+  }
+ },
+ {
+  "id": "A213",
+  "category": "random",
+  "description": "random #65",
+  "input": {
+   "gross_salary": 2832000,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 672980,
+   "new": 423380
+  },
+  "expected_total_income": {
+   "old": 2782000,
+   "new": 2757000
+  }
+ },
+ {
+  "id": "A214",
+  "category": "random",
+  "description": "random #66",
+  "input": {
+   "gross_salary": 61455600,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 34000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 25880040,
+   "new": 23392430
+  },
+  "expected_total_income": {
+   "old": 61171600,
+   "new": 61380600
+  }
+ },
+ {
+  "id": "A215",
+  "category": "random",
+  "description": "random #67",
+  "input": {
+   "gross_salary": 21784800,
+   "age": 45,
+   "hra_received": 3485568,
+   "basic_plus_da": 8713920,
+   "rent_paid": 362000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 6500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 8210790,
+   "new": 7920820
+  },
+  "expected_total_income": {
+   "old": 21678300,
+   "new": 21709800
+  }
+ },
+ {
+  "id": "A216",
+  "category": "random",
+  "description": "random #68",
+  "input": {
+   "gross_salary": 36287500,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 318000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 13000,
+   "health_ins_parents": 38000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 13732490,
+   "new": 13576880
+  },
+  "expected_total_income": {
+   "old": 35836500,
+   "new": 36212500
+  }
+ },
+ {
+  "id": "A217",
+  "category": "random",
+  "description": "random #69",
+  "input": {
+   "gross_salary": 78298200,
+   "age": 79,
+   "hra_received": 15659640,
+   "basic_plus_da": 39149100,
+   "rent_paid": 286000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 33132950,
+   "new": 29961050
+  },
+  "expected_total_income": {
+   "old": 78148200,
+   "new": 78223200
+  }
+ },
+ {
+  "id": "A218",
+  "category": "random",
+  "description": "random #70",
+  "input": {
+   "gross_salary": 2957400,
+   "age": 45,
+   "hra_received": 739350,
+   "basic_plus_da": 1478700,
+   "rent_paid": 323000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 641870,
+   "new": 462510
+  },
+  "expected_total_income": {
+   "old": 2682270,
+   "new": 2882400
+  }
+ },
+ {
+  "id": "A219",
+  "category": "random",
+  "description": "random #71",
+  "input": {
+   "gross_salary": 7712500,
+   "age": 80,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2366650,
+   "new": 2140710
+  },
+  "expected_total_income": {
+   "old": 7562500,
+   "new": 7637500
+  }
+ },
+ {
+  "id": "A220",
+  "category": "random",
+  "description": "random #72",
+  "input": {
+   "gross_salary": 316200,
+   "age": 85,
+   "hra_received": 79050,
+   "basic_plus_da": 158100,
+   "rent_paid": 470000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 202960,
+   "new": 241200
+  }
+ },
+ {
+  "id": "A221",
+  "category": "random",
+  "description": "random #73",
+  "input": {
+   "gross_salary": 3692900,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 30500,
+   "health_ins_parents": 12000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 878920,
+   "new": 691980
+  },
+  "expected_total_income": {
+   "old": 3450400,
+   "new": 3617900
+  }
+ },
+ {
+  "id": "A222",
+  "category": "random",
+  "description": "random #74",
+  "input": {
+   "gross_salary": 2034700,
+   "age": 58,
+   "hra_received": 325552,
+   "basic_plus_da": 813880,
+   "rent_paid": 95000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 67000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 399080,
+   "new": 199620
+  },
+  "expected_total_income": {
+   "old": 1904090,
+   "new": 1959700
+  }
+ },
+ {
+  "id": "A223",
+  "category": "random",
+  "description": "random #75",
+  "input": {
+   "gross_salary": 31600300,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 268000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 22500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 11905840,
+   "new": 11748870
+  },
+  "expected_total_income": {
+   "old": 31152800,
+   "new": 31525300
+  }
+ },
+ {
+  "id": "A224",
+  "category": "random",
+  "description": "random #76",
+  "input": {
+   "gross_salary": 3871600,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 95000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 31000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 897500,
+   "new": 747740
+  },
+  "expected_total_income": {
+   "old": 3501600,
+   "new": 3796600
+  }
+ },
+ {
+  "id": "A225",
+  "category": "random",
+  "description": "random #77",
+  "input": {
+   "gross_salary": 26399300,
+   "age": 25,
+   "hra_received": 5279860,
+   "basic_plus_da": 10559720,
+   "rent_paid": 83000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 10000,
+   "health_ins_parents": 24500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 9980020,
+   "new": 9720480
+  },
+  "expected_total_income": {
+   "old": 26214800,
+   "new": 26324300
+  }
+ },
+ {
+  "id": "A226",
+  "category": "random",
+  "description": "random #78",
+  "input": {
+   "gross_salary": 2135800,
+   "age": 35,
+   "hra_received": 427160,
+   "basic_plus_da": 854320,
+   "rent_paid": 118000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 120000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 31000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 353570,
+   "new": 223810
+  },
+  "expected_total_income": {
+   "old": 1758230,
+   "new": 2060800
+  }
+ },
+ {
+  "id": "A227",
+  "category": "random",
+  "description": "random #79",
+  "input": {
+   "gross_salary": 8500500,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2682850,
+   "new": 2411150
+  },
+  "expected_total_income": {
+   "old": 8450500,
+   "new": 8425500
+  }
+ },
+ {
+  "id": "A228",
+  "category": "random",
+  "description": "random #80",
+  "input": {
+   "gross_salary": 14645900,
+   "age": 60,
+   "hra_received": 2343344,
+   "basic_plus_da": 5858360,
+   "rent_paid": 602000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 256000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 9500,
+   "health_ins_parents": 29500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 4918220,
+   "new": 4725720
+  },
+  "expected_total_income": {
+   "old": 14340740,
+   "new": 14570900
+  }
+ },
+ {
+  "id": "A229",
+  "category": "random",
+  "description": "random #81",
+  "input": {
+   "gross_salary": 7260200,
+   "age": 79,
+   "hra_received": 1161632,
+   "basic_plus_da": 2904080,
+   "rent_paid": 369000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2195890,
+   "new": 1985480
+  },
+  "expected_total_income": {
+   "old": 7031610,
+   "new": 7185200
+  }
+ },
+ {
+  "id": "A230",
+  "category": "random",
+  "description": "random #82",
+  "input": {
+   "gross_salary": 2997500,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 58000,
+   "health_ins_parents": 57500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 628420,
+   "new": 475020
+  },
+  "expected_total_income": {
+   "old": 2647500,
+   "new": 2922500
+  }
+ },
+ {
+  "id": "A231",
+  "category": "random",
+  "description": "random #83",
+  "input": {
+   "gross_salary": 12615900,
+   "age": 65,
+   "hra_received": 2523180,
+   "basic_plus_da": 5046360,
+   "rent_paid": 436000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 64500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 4227580,
+   "new": 3997350
+  },
+  "expected_total_income": {
+   "old": 12415900,
+   "new": 12540900
+  }
+ },
+ {
+  "id": "A232",
+  "category": "random",
+  "description": "random #84",
+  "input": {
+   "gross_salary": 16330200,
+   "age": 80,
+   "hra_received": 3266040,
+   "basic_plus_da": 6532080,
+   "rent_paid": 261000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 5584200,
+   "new": 5330050
+  },
+  "expected_total_income": {
+   "old": 16230200,
+   "new": 16255200
+  }
+ },
+ {
+  "id": "A233",
+  "category": "random",
+  "description": "random #85",
+  "input": {
+   "gross_salary": 504700,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 142000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 42500,
+   "health_ins_parents": 54500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 87700,
+   "new": 429700
+  }
+ },
+ {
+  "id": "A234",
+  "category": "random",
+  "description": "random #86",
+  "input": {
+   "gross_salary": 1458800,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 102000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 197120,
+   "new": 91070
+  },
+  "expected_total_income": {
+   "old": 1256800,
+   "new": 1383800
+  }
+ },
+ {
+  "id": "A235",
+  "category": "random",
+  "description": "random #87",
+  "input": {
+   "gross_salary": 341400,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 32500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 58900,
+   "new": 266400
+  }
+ },
+ {
+  "id": "A236",
+  "category": "random",
+  "description": "random #88",
+  "input": {
+   "gross_salary": 257900,
+   "age": 85,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 268000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 6500,
+   "health_ins_parents": 52500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 182900
+  }
+ },
+ {
+  "id": "A237",
+  "category": "random",
+  "description": "random #89",
+  "input": {
+   "gross_salary": 422300,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 223000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 23000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 149300,
+   "new": 347300
+  }
+ },
+ {
+  "id": "A238",
+  "category": "random",
+  "description": "random #90",
+  "input": {
+   "gross_salary": 14801200,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 303000,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 64500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 4957850,
+   "new": 4781440
+  },
+  "expected_total_income": {
+   "old": 14451200,
+   "new": 14726200
+  }
+ },
+ {
+  "id": "A239",
+  "category": "random",
+  "description": "random #91",
+  "input": {
+   "gross_salary": 8999900,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 14500,
+   "health_ins_parents": 16500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 2846470,
+   "new": 2582550
+  },
+  "expected_total_income": {
+   "old": 8918900,
+   "new": 8924900
+  }
+ },
+ {
+  "id": "A240",
+  "category": "random",
+  "description": "random #92",
+  "input": {
+   "gross_salary": 11466700,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 57000,
+   "health_ins_parents": 14500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 3827990,
+   "new": 3585020
+  },
+  "expected_total_income": {
+   "old": 11302200,
+   "new": 11391700
+  }
+ },
+ {
+  "id": "A241",
+  "category": "random",
+  "description": "random #93",
+  "input": {
+   "gross_salary": 389700,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 339700,
+   "new": 314700
+  }
+ },
+ {
+  "id": "A242",
+  "category": "random",
+  "description": "random #94",
+  "input": {
+   "gross_salary": 255600,
+   "age": 79,
+   "hra_received": 63900,
+   "basic_plus_da": 127800,
+   "rent_paid": 253000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 322000,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 49500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 180600
+  }
+ },
+ {
+  "id": "A243",
+  "category": "random",
+  "description": "random #95",
+  "input": {
+   "gross_salary": 4390700,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 14000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1108130,
+   "new": 909700
+  },
+  "expected_total_income": {
+   "old": 4176700,
+   "new": 4315700
+  }
+ },
+ {
+  "id": "A244",
+  "category": "random",
+  "description": "random #96",
+  "input": {
+   "gross_salary": 1028900,
+   "age": 25,
+   "hra_received": 164624,
+   "basic_plus_da": 411560,
+   "rent_paid": 859000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 294000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 50000,
+   "health_ins_parents": 35000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 414280,
+   "new": 953900
+  }
+ },
+ {
+  "id": "A245",
+  "category": "random",
+  "description": "random #97",
+  "input": {
+   "gross_salary": 503200,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 6500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 346700,
+   "new": 428200
+  }
+ },
+ {
+  "id": "A246",
+  "category": "random",
+  "description": "random #98",
+  "input": {
+   "gross_salary": 490800,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 15000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 400800,
+   "new": 415800
+  }
+ },
+ {
+  "id": "A247",
+  "category": "random",
+  "description": "random #99",
+  "input": {
+   "gross_salary": 11675300,
+   "age": 65,
+   "hra_received": 2335060,
+   "basic_plus_da": 5837650,
+   "rent_paid": 300000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 51500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 3872160,
+   "new": 3659870
+  },
+  "expected_total_income": {
+   "old": 11425300,
+   "new": 11600300
+  }
+ },
+ {
+  "id": "A248",
+  "category": "random",
+  "description": "random #100",
+  "input": {
+   "gross_salary": 288400,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 38400,
+   "new": 213400
+  }
+ },
+ {
+  "id": "A249",
+  "category": "random",
+  "description": "random #101",
+  "input": {
+   "gross_salary": 378400,
+   "age": 35,
+   "hra_received": 60544,
+   "basic_plus_da": 151360,
+   "rent_paid": 258000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 57000,
+   "health_ins_parents": 22000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 170860,
+   "new": 303400
+  }
+ },
+ {
+  "id": "A250",
+  "category": "random",
+  "description": "random #102",
+  "input": {
+   "gross_salary": 452900,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 75000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 56000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 227900,
+   "new": 377900
+  }
+ },
+ {
+  "id": "A251",
+  "category": "random",
+  "description": "random #103",
+  "input": {
+   "gross_salary": 270500,
+   "age": 85,
+   "hra_received": 43280,
+   "basic_plus_da": 108200,
+   "rent_paid": 236000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 77220,
+   "new": 195500
+  }
+ },
+ {
+  "id": "A252",
+  "category": "random",
+  "description": "random #104",
+  "input": {
+   "gross_salary": 7728200,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 325000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2300540,
+   "new": 2146100
+  },
+  "expected_total_income": {
+   "old": 7328200,
+   "new": 7653200
+  }
+ },
+ {
+  "id": "A253",
+  "category": "random",
+  "description": "random #105",
+  "input": {
+   "gross_salary": 342200,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 92200,
+   "new": 267200
+  }
+ },
+ {
+  "id": "A254",
+  "category": "random",
+  "description": "random #106",
+  "input": {
+   "gross_salary": 5481200,
+   "age": 35,
+   "hra_received": 1370300,
+   "basic_plus_da": 2740600,
+   "rent_paid": 514000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 14000,
+   "health_ins_parents": 59000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 1445350,
+   "new": 1374930
+  },
+  "expected_total_income": {
+   "old": 5077260,
+   "new": 5406200
+  }
+ },
+ {
+  "id": "A255",
+  "category": "random",
+  "description": "random #107",
+  "input": {
+   "gross_salary": 4305800,
+   "age": 45,
+   "hra_received": 861160,
+   "basic_plus_da": 1722320,
+   "rent_paid": 439000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 43000,
+   "health_ins_parents": 17500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 1036320,
+   "new": 883210
+  },
+  "expected_total_income": {
+   "old": 3946530,
+   "new": 4230800
+  }
+ },
+ {
+  "id": "A256",
+  "category": "random",
+  "description": "random #108",
+  "input": {
+   "gross_salary": 15249800,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 24500,
+   "health_ins_parents": 55000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 5211680,
+   "new": 4942400
+  },
+  "expected_total_income": {
+   "old": 15150300,
+   "new": 15174800
+  }
+ },
+ {
+  "id": "A257",
+  "category": "random",
+  "description": "random #109",
+  "input": {
+   "gross_salary": 5791000,
+   "age": 80,
+   "hra_received": 1158200,
+   "basic_plus_da": 2895500,
+   "rent_paid": 447000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 8000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1667570,
+   "new": 1481250
+  },
+  "expected_total_income": {
+   "old": 5525550,
+   "new": 5716000
+  }
+ },
+ {
+  "id": "A258",
+  "category": "random",
+  "description": "random #110",
+  "input": {
+   "gross_salary": 387000,
+   "age": 35,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 22000,
+   "health_ins_parents": 19000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 296000,
+   "new": 312000
+  }
+ },
+ {
+  "id": "A259",
+  "category": "random",
+  "description": "random #111",
+  "input": {
+   "gross_salary": 27101400,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 40500,
+   "health_ins_parents": 35000,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 10267300,
+   "new": 9994300
+  },
+  "expected_total_income": {
+   "old": 26951400,
+   "new": 27026400
+  }
+ },
+ {
+  "id": "A260",
+  "category": "random",
+  "description": "random #112",
+  "input": {
+   "gross_salary": 565600,
+   "age": 25,
+   "hra_received": 90496,
+   "basic_plus_da": 226240,
+   "rent_paid": 537000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 344000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 225100,
+   "new": 490600
+  }
+ },
+ {
+  "id": "A261",
+  "category": "random",
+  "description": "random #113",
+  "input": {
+   "gross_salary": 90755800,
+   "age": 65,
+   "hra_received": 18151160,
+   "basic_plus_da": 45377900,
+   "rent_paid": 548000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 158000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 38433040,
+   "new": 34819510
+  },
+  "expected_total_income": {
+   "old": 90547800,
+   "new": 90680800
+  }
+ },
+ {
+  "id": "A262",
+  "category": "random",
+  "description": "random #114",
+  "input": {
+   "gross_salary": 16505000,
+   "age": 80,
+   "hra_received": 3301000,
+   "basic_plus_da": 6602000,
+   "rent_paid": 393000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 24500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 5602240,
+   "new": 5392760
+  },
+  "expected_total_income": {
+   "old": 16280500,
+   "new": 16430000
+  }
+ },
+ {
+  "id": "A263",
+  "category": "random",
+  "description": "random #115",
+  "input": {
+   "gross_salary": 63004900,
+   "age": 35,
+   "hra_received": 10080784,
+   "basic_plus_da": 25201960,
+   "rent_paid": 430000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 42000,
+   "health_ins_parents": 14500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 26561290,
+   "new": 23996660
+  },
+  "expected_total_income": {
+   "old": 62765400,
+   "new": 62929900
+  }
+ },
+ {
+  "id": "A264",
+  "category": "random",
+  "description": "random #116",
+  "input": {
+   "gross_salary": 267600,
+   "age": 80,
+   "hra_received": 53520,
+   "basic_plus_da": 107040,
+   "rent_paid": 533000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 347000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 16500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 192600
+  }
+ },
+ {
+  "id": "A265",
+  "category": "random",
+  "description": "random #117",
+  "input": {
+   "gross_salary": 66040200,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 270000,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 27779410,
+   "new": 25180430
+  },
+  "expected_total_income": {
+   "old": 65615200,
+   "new": 65965200
+  }
+ },
+ {
+  "id": "A266",
+  "category": "random",
+  "description": "random #118",
+  "input": {
+   "gross_salary": 8428100,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 294000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 24500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2529480,
+   "new": 2386300
+  },
+  "expected_total_income": {
+   "old": 8003600,
+   "new": 8353100
+  }
+ },
+ {
+  "id": "A267",
+  "category": "random",
+  "description": "random #119",
+  "input": {
+   "gross_salary": 78974300,
+   "age": 80,
+   "hra_received": 15794860,
+   "basic_plus_da": 31589720,
+   "rent_paid": 843000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 33386330,
+   "new": 30224730
+  },
+  "expected_total_income": {
+   "old": 78774300,
+   "new": 78899300
+  }
+ },
+ {
+  "id": "A268",
+  "category": "random",
+  "description": "random #120",
+  "input": {
+   "gross_salary": 619300,
+   "age": 60,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 469300,
+   "new": 544300
+  }
+ },
+ {
+  "id": "A269",
+  "category": "random",
+  "description": "random #121",
+  "input": {
+   "gross_salary": 43538800,
+   "age": 65,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 19500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 16667030,
+   "new": 16404880
+  },
+  "expected_total_income": {
+   "old": 43369300,
+   "new": 43463800
+  }
+ },
+ {
+  "id": "A270",
+  "category": "random",
+  "description": "random #122",
+  "input": {
+   "gross_salary": 9921200,
+   "age": 79,
+   "hra_received": 1984240,
+   "basic_plus_da": 3968480,
+   "rent_paid": 647000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 54000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2998780,
+   "new": 2898740
+  },
+  "expected_total_income": {
+   "old": 9371050,
+   "new": 9846200
+  }
+ },
+ {
+  "id": "A271",
+  "category": "random",
+  "description": "random #123",
+  "input": {
+   "gross_salary": 48937100,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 18783220,
+   "new": 18510220
+  },
+  "expected_total_income": {
+   "old": 48787100,
+   "new": 48862100
+  }
+ },
+ {
+  "id": "A272",
+  "category": "random",
+  "description": "random #124",
+  "input": {
+   "gross_salary": 51258700,
+   "age": 35,
+   "hra_received": 10251740,
+   "basic_plus_da": 25629350,
+   "rent_paid": 507000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 20409300,
+   "new": 19415640
+  },
+  "expected_total_income": {
+   "old": 51108700,
+   "new": 51183700
+  }
+ },
+ {
+  "id": "A273",
+  "category": "random",
+  "description": "random #125",
+  "input": {
+   "gross_salary": 1492300,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 39000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 209030,
+   "new": 96300
+  },
+  "expected_total_income": {
+   "old": 1303300,
+   "new": 1417300
+  }
+ },
+ {
+  "id": "A274",
+  "category": "random",
+  "description": "random #126",
+  "input": {
+   "gross_salary": 264100,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 64100,
+   "new": 189100
+  }
+ },
+ {
+  "id": "A275",
+  "category": "random",
+  "description": "random #127",
+  "input": {
+   "gross_salary": 36352000,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 13500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 13908770,
+   "new": 13602030
+  },
+  "expected_total_income": {
+   "old": 36288500,
+   "new": 36277000
+  }
+ },
+ {
+  "id": "A276",
+  "category": "random",
+  "description": "random #128",
+  "input": {
+   "gross_salary": 48884100,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 150000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 13500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 18715030,
+   "new": 18489550
+  },
+  "expected_total_income": {
+   "old": 48620600,
+   "new": 48809100
+  }
+ },
+ {
+  "id": "A277",
+  "category": "random",
+  "description": "random #129",
+  "input": {
+   "gross_salary": 890700,
+   "age": 35,
+   "hra_received": 222675,
+   "basic_plus_da": 445350,
+   "rent_paid": 162000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 35000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 33430,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 598240,
+   "new": 815700
+  }
+ },
+ {
+  "id": "A278",
+  "category": "random",
+  "description": "random #130",
+  "input": {
+   "gross_salary": 32169400,
+   "age": 79,
+   "hra_received": 6433880,
+   "basic_plus_da": 16084700,
+   "rent_paid": 140000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 342000,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 16500,
+   "health_ins_parents": 29000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 12125320,
+   "new": 11970820
+  },
+  "expected_total_income": {
+   "old": 31723900,
+   "new": 32094400
+  }
+ },
+ {
+  "id": "A279",
+  "category": "random",
+  "description": "random #131",
+  "input": {
+   "gross_salary": 18970800,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 6510710,
+   "new": 6277490
+  },
+  "expected_total_income": {
+   "old": 18770800,
+   "new": 18895800
+  }
+ },
+ {
+  "id": "A280",
+  "category": "random",
+  "description": "random #132",
+  "input": {
+   "gross_salary": 5390700,
+   "age": 79,
+   "hra_received": 1347675,
+   "basic_plus_da": 2695350,
+   "rent_paid": 174000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 26500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 1606990,
+   "new": 1343870
+  },
+  "expected_total_income": {
+   "old": 5315700,
+   "new": 5315700
+  }
+ },
+ {
+  "id": "A281",
+  "category": "random",
+  "description": "random #133",
+  "input": {
+   "gross_salary": 27428800,
+   "age": 65,
+   "hra_received": 6857200,
+   "basic_plus_da": 13714400,
+   "rent_paid": 352000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 60000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 10372230,
+   "new": 10121980
+  },
+  "expected_total_income": {
+   "old": 27228800,
+   "new": 27353800
+  }
+ },
+ {
+  "id": "A282",
+  "category": "random",
+  "description": "random #134",
+  "input": {
+   "gross_salary": 41223800,
+   "age": 80,
+   "hra_received": 6595808,
+   "basic_plus_da": 16489520,
+   "rent_paid": 830000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 56000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 15778280,
+   "new": 15502030
+  },
+  "expected_total_income": {
+   "old": 41123800,
+   "new": 41148800
+  }
+ },
+ {
+  "id": "A283",
+  "category": "random",
+  "description": "random #135",
+  "input": {
+   "gross_salary": 58375500,
+   "age": 79,
+   "hra_received": 11675100,
+   "basic_plus_da": 23350200,
+   "rent_paid": 601000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 33000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 24645830,
+   "new": 22191200
+  },
+  "expected_total_income": {
+   "old": 58292500,
+   "new": 58300500
+  }
+ },
+ {
+  "id": "A284",
+  "category": "random",
+  "description": "random #136",
+  "input": {
+   "gross_salary": 304600,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 0,
+   "health_ins_parents": 56500,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 179600,
+   "new": 229600
+  }
+ },
+ {
+  "id": "A285",
+  "category": "random",
+  "description": "random #137",
+  "input": {
+   "gross_salary": 2090800,
+   "age": 58,
+   "hra_received": 522700,
+   "basic_plus_da": 1045400,
+   "rent_paid": 177000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 29000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 364520,
+   "new": 212110
+  },
+  "expected_total_income": {
+   "old": 1793340,
+   "new": 2015800
+  }
+ },
+ {
+  "id": "A286",
+  "category": "random",
+  "description": "random #138",
+  "input": {
+   "gross_salary": 405100,
+   "age": 25,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 180100,
+   "new": 330100
+  }
+ },
+ {
+  "id": "A287",
+  "category": "random",
+  "description": "random #139",
+  "input": {
+   "gross_salary": 207300,
+   "age": 45,
+   "hra_received": 51825,
+   "basic_plus_da": 103650,
+   "rent_paid": 113000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 49000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 66840,
+   "new": 132300
+  }
+ },
+ {
+  "id": "A288",
+  "category": "random",
+  "description": "random #140",
+  "input": {
+   "gross_salary": 990200,
+   "age": 45,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 83000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 87300,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 857200,
+   "new": 915200
+  }
+ },
+ {
+  "id": "A289",
+  "category": "random",
+  "description": "random #141",
+  "input": {
+   "gross_salary": 843500,
+   "age": 79,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 23500,
+   "health_ins_parents": 40000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 47840,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 680000,
+   "new": 768500
+  }
+ },
+ {
+  "id": "A290",
+  "category": "random",
+  "description": "random #142",
+  "input": {
+   "gross_salary": 25127100,
+   "age": 79,
+   "hra_received": 5025420,
+   "basic_plus_da": 10050840,
+   "rent_paid": 593000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 96000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 9495630,
+   "new": 9224320
+  },
+  "expected_total_income": {
+   "old": 24981100,
+   "new": 25052100
+  }
+ },
+ {
+  "id": "A291",
+  "category": "random",
+  "description": "random #143",
+  "input": {
+   "gross_salary": 921600,
+   "age": 25,
+   "hra_received": 230400,
+   "basic_plus_da": 460800,
+   "rent_paid": 232000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 43500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 46420,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 660680,
+   "new": 846600
+  }
+ },
+ {
+  "id": "A292",
+  "category": "random",
+  "description": "random #144",
+  "input": {
+   "gross_salary": 264500,
+   "age": 58,
+   "hra_received": 66125,
+   "basic_plus_da": 132250,
+   "rent_paid": 827000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 28500,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 0,
+   "new": 189500
+  }
+ },
+ {
+  "id": "A293",
+  "category": "random",
+  "description": "random #145",
+  "input": {
+   "gross_salary": 6597300,
+   "age": 80,
+   "hra_received": 1319460,
+   "basic_plus_da": 2638920,
+   "rent_paid": 227000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 53000,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 2000040,
+   "new": 1757970
+  },
+  "expected_total_income": {
+   "old": 6494300,
+   "new": 6522300
+  }
+ },
+ {
+  "id": "A294",
+  "category": "random",
+  "description": "random #146",
+  "input": {
+   "gross_salary": 312000,
+   "age": 79,
+   "hra_received": 78000,
+   "basic_plus_da": 156000,
+   "rent_paid": 89000,
+   "rent_city_is_metro": true,
+   "home_loan_interest": 0,
+   "sec_80c": 50000,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 19500,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 0,
+   "new": 0
+  },
+  "expected_total_income": {
+   "old": 119100,
+   "new": 237000
+  }
+ },
+ {
+  "id": "A295",
+  "category": "random",
+  "description": "random #147",
+  "input": {
+   "gross_salary": 3147900,
+   "age": 58,
+   "hra_received": 0,
+   "basic_plus_da": 0,
+   "rent_paid": 0,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 200000,
+   "sec_80ccd_1b": 25000,
+   "health_ins_self": 7000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 714760,
+   "new": 521940
+  },
+  "expected_total_income": {
+   "old": 2915900,
+   "new": 3072900
+  }
+ },
+ {
+  "id": "A296",
+  "category": "random",
+  "description": "random #148",
+  "input": {
+   "gross_salary": 1647200,
+   "age": 80,
+   "hra_received": 329440,
+   "basic_plus_da": 823600,
+   "rent_paid": 523000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 0,
+   "sec_80ccd_1b": 0,
+   "health_ins_self": 0,
+   "health_ins_parents": 41000,
+   "parents_senior": true
+  },
+  "expected": {
+   "old": 174750,
+   "new": 120460
+  },
+  "expected_total_income": {
+   "old": 1226760,
+   "new": 1572200
+  }
+ },
+ {
+  "id": "A297",
+  "category": "random",
+  "description": "random #149",
+  "input": {
+   "gross_salary": 49442800,
+   "age": 58,
+   "hra_received": 9888560,
+   "basic_plus_da": 24721400,
+   "rent_paid": 137000,
+   "rent_city_is_metro": false,
+   "home_loan_interest": 0,
+   "sec_80c": 100000,
+   "sec_80ccd_1b": 50000,
+   "health_ins_self": 47000,
+   "health_ins_parents": 0,
+   "parents_senior": false
+  },
+  "expected": {
+   "old": 18951190,
+   "new": 18707440
+  },
+  "expected_total_income": {
+   "old": 49217800,
+   "new": 49367800
+  }
+ }
+]

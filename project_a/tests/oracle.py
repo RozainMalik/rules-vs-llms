@@ -1,5 +1,5 @@
 """
-Independent REFERENCE calculator for FY 2024-25, used ONLY to produce expected
+Independent REFERENCE calculator for FY 2024-25 and FY 2025-26, used ONLY to produce expected
 values for the test suite.
 
 Why a second calculator? If the engine generated its own expected values the
@@ -34,7 +34,14 @@ OLD_BANDS = {
     "60_79":    [(300000, 0), (500000, 5), (1000000, 20), (None, 30)],
     "80_plus":  [(500000, 0), (1000000, 20), (None, 30)],
 }
-NEW_BANDS = [(300000, 0), (700000, 5), (1000000, 10), (1200000, 15), (1500000, 20), (None, 30)]
+# New regime per fiscal year: (slab bands, 87A income limit, 87A max rebate)
+NEW_REGIME = {
+    "2024-25": ([(300000, 0), (700000, 5), (1000000, 10), (1200000, 15), (1500000, 20), (None, 30)],
+                700000, 25000),                                   # Finance (No.2) Act 2024
+    "2025-26": ([(400000, 0), (800000, 5), (1200000, 10), (1600000, 15), (2000000, 20),
+                 (2400000, 25), (None, 30)],
+                1200000, 60000),                                  # Finance Act 2025
+}
 OLD_SURCHARGE = [(5000000, 10), (10000000, 15), (20000000, 25), (50000000, 37)]
 NEW_SURCHARGE = [(5000000, 10), (10000000, 15), (20000000, 25)]
 
@@ -56,20 +63,22 @@ def _with_surcharge(ti: int, tax: F, bands, table) -> F:
     return min(tax * (1 + F(rate, 100)), at_t + (ti - threshold))
 
 
-def oracle(case: dict) -> dict:
+def oracle(case: dict, fiscal_year: str = "2024-25") -> dict:
     """case: plain dict with TaxInput field names (missing = 0)."""
+    new_bands, rebate_limit, rebate_max = NEW_REGIME[fiscal_year]
     g = lambda k: case.get(k) or 0
     gross, age = g("gross_salary"), g("age")
 
     # ---------------- NEW REGIME ----------------
     ti_new = _r10(F(max(0, gross - min(75000, gross))))
-    t = _slabs(ti_new, NEW_BANDS)
-    if ti_new <= 700000:
-        t = max(F(0), t - 25000)
+    t = _slabs(ti_new, new_bands)
+    if ti_new <= rebate_limit:
+        t = max(F(0), t - rebate_max)
     else:
-        t = min(t, F(ti_new - 700000))
-    t = _with_surcharge(ti_new, t, NEW_BANDS, NEW_SURCHARGE)
-    new_tax = _r10(t * F(104, 100))
+        t = min(t, F(ti_new - rebate_limit))
+    t = _with_surcharge(ti_new, t, new_bands, NEW_SURCHARGE)
+    raw_new = t * F(104, 100)
+    new_tax = _r10(raw_new)
 
     # ---------------- OLD REGIME ----------------
     hra = F(0)
@@ -90,6 +99,8 @@ def oracle(case: dict) -> dict:
     if ti_old <= 500000:
         t = max(F(0), t - 12500)
     t = _with_surcharge(ti_old, t, bands, OLD_SURCHARGE)
-    old_tax = _r10(t * F(104, 100))
+    raw_old = t * F(104, 100)
+    old_tax = _r10(raw_old)
 
-    return {"old": old_tax, "new": new_tax, "ti_old": ti_old, "ti_new": ti_new}
+    return {"old": old_tax, "new": new_tax, "ti_old": ti_old, "ti_new": ti_new,
+            "raw_old": raw_old, "raw_new": raw_new}   # unrounded, for building Sec 288B edge cases

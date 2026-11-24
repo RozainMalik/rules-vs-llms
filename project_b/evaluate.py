@@ -1,5 +1,5 @@
 """
-Task 4: measure every detector family on every problem type.
+Measure every detector family on every problem type.
 
 Setup (all seeded, so every number reproduces):
   - CLEAN batches: N_CLEAN batches of BATCH_SIZE rows drawn from the clean pool

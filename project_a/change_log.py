@@ -1,5 +1,5 @@
 """
-Task 5 evidence — reproduces every number in the RESULTS_A change log.
+evidence — reproduces every number in the RESULTS_A change log.
 
 1. Size of each change (lines of rule data / text / code touched).
 2. STALE deployment: what each implementation answers for FY 2025-26 if the

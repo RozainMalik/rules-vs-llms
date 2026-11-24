@@ -27,7 +27,7 @@ Full write-ups:
 |---|---|
 | [RESULTS_A.md](RESULTS_A.md) | Project A comparison tables, the FY 2025-26 update, and the recommended design |
 | [RESULTS_B.md](RESULTS_B.md) | Project B detection, false-alarm and cost tables, real issues found in the data, and how it would scale |
-| [DECISION_MATRIX.md](DECISION_MATRIX.md) | Every component: rule, statistics, LLM, or hybrid, with the measurement behind the choice |
+| [decision_matrix.md](decision_matrix.md) | Every component: rule, statistics, LLM, or hybrid, with the measurement behind the choice |
 | [AI_USAGE.md](AI_USAGE.md) | AI tools used during development, and where they got things wrong |
 
 ---

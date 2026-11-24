@@ -24,7 +24,7 @@ The three calculators:
 
 All three share the same input gate. Missing or contradictory input returns a clarifying question before any tax is computed, so this comparison measures the calculation only.
 
-## 2. Comparison (Task 4) — `results/benchmark_tables.md`
+## 2. Comparison — `results/benchmark_tables.md`
 
 How to read the columns:
 - **Rupee-exact**: both regimes match the oracle to the rupee.
@@ -71,7 +71,7 @@ How to read the columns:
 
 **The design that makes the parser safe.** The LLM only *extracts* fields from the text; it never decides whether enough is known. The same deterministic gate used by the calculators (`parser/common.decide`) makes that decision, so a missing salary or a contradiction always produces a question. The regex baseline fails in the opposite direction: it can't read "contradictory" or "ambiguous" text, so it fills a field and computes, which is 7 unsafe guesses.
 
-## 3. Change log: FY 2024-25 → FY 2025-26 (Task 5) — `results/change_log.json`
+## 3. Change log: FY 2024-25 → FY 2025-26 — `results/change_log.json`
 
 **What changed in law:** new-regime slabs (nil to ₹4 L, seven bands, 30% above ₹24 L) and the Sec 87A rebate (income limit ₹7 L → ₹12 L, maximum ₹25,000 → ₹60,000). The old regime is unchanged.
 

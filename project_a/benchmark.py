@@ -1,5 +1,5 @@
 """
-Task 4 — MEASURE EVERYTHING for the three calculators and the two parsers.
+MEASURE EVERYTHING for the three calculators and the two parsers.
 
 For each implementation and fiscal year:
   accuracy        rupee-exact on both regimes (LLM query-time: stratified sample)

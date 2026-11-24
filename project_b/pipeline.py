@@ -1,5 +1,5 @@
 """
-Task 5: the HYBRID pipeline — the winners from evaluate.py, combined.
+ The HYBRID pipeline — the winners from evaluate.py, combined.
 
   Stage 1  RULES on every row        a b c d e f h i j, regex part of l, phrase part of k
   Stage 2  STATISTICS per batch      g (null-spike z-test), k (text model), l (novel tokens)

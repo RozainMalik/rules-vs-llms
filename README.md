@@ -18,7 +18,8 @@ This repo answers that question empirically. It builds the same systems several 
 - **Rules won on calculation.** The rules engine was correct on every test case (293 for FY 2024-25, 298 for FY 2025-26).
 - **The LLM computing tax directly was correct only 16–21% of the time**, and gave different answers to the same question when asked again. In one case it invented a ₹7,800 "rounding adjustment" so that its wrong answer would add up.
 - **LLM-written code reached 100%, but only with guardrails.** It took several rounds of review and test-gated selection between candidates. Some versions passed every edge case and were still wrong on random inputs.
-- **LLMs earned their cost on messy text**: Hinglish descriptions, short free-text inputs, and free-text fields in the 311 data, *as long as deterministic code made the final decision*.
+- **Stale rules fail silently.** Running the FY 2024-25 engine on FY 2025-26 inputs gave 230 of 298 answers wrong, with no error raised, which is why rules are versioned per financial year.
+- **LLMs earned their cost on messy text.** The LLM parser read 49 of 50 plain-English and Hinglish descriptions correctly with **0 unsafe guesses**, asking a clarifying question whenever information was missing. The same held for free-text fields in the 311 data, *as long as deterministic code made the final decision*.
 
 Full write-ups:
 
@@ -26,7 +27,7 @@ Full write-ups:
 |---|---|
 | [RESULTS_A.md](RESULTS_A.md) | Project A comparison tables, the FY 2025-26 update, and the recommended design |
 | [RESULTS_B.md](RESULTS_B.md) | Project B detection, false-alarm and cost tables, real issues found in the data, and how it would scale |
-| [decision_matrix.md](decision_matrix.md) | Every component: rule, statistics, LLM, or hybrid, with the measurement behind the choice |
+| [DECISION_MATRIX.md](DECISION_MATRIX.md) | Every component: rule, statistics, LLM, or hybrid, with the measurement behind the choice |
 | [AI_USAGE.md](AI_USAGE.md) | AI tools used during development, and where they got things wrong |
 
 ---
@@ -55,7 +56,7 @@ A **natural-language parser** turns plain English or Hinglish descriptions into 
 
 ## Quick start
 
-Requires Python 3.10+ (developed on 3.12).
+Requires Python 3.11+ (developed on 3.12).
 
 ```bash
 pip install -r requirements.txt

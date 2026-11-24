@@ -114,8 +114,8 @@ def determinism(impl, cases: list[dict]) -> dict:
             try:
                 res = impl.compute(TaxInput(**c["input"]), sample=s)
                 answers.add((res.old.tax_payable, res.new.tax_payable))
-            except Exception:  # noqa: BLE001
-                answers.add(("error",))
+            except Exception as e:  # noqa: BLE001
+                answers.add(("error", repr(e)[:80]))
         distinct.append(len(answers))
     return {"inputs": len(picks), "repeats": REPEATS, "distinct_answers_per_input": distinct,
             "deterministic": all(d == 1 for d in distinct)}

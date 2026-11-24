@@ -89,7 +89,12 @@ class RulesEngine:
         self.rules = load_rules(fiscal_year)
 
     # ---- public ------------------------------------------------------------
-    def compute(self, inp: TaxInput) -> Union[TaxResult, Clarification]:
+    def compute_with_meta(self, inp: TaxInput, sample: int = 0):
+        """Same interface as the LLM calculators; no LLM call, so no metadata."""
+        return self.compute(inp), None
+
+    def compute(self, inp: TaxInput, sample: int = 0) -> Union[TaxResult, Clarification]:
+        # `sample` is accepted for interface parity and ignored: the engine is deterministic.
         errors = inp.validation_errors()
         if errors:
             return Clarification(
@@ -206,6 +211,10 @@ class RulesEngine:
                 upper = inr(band["to"]) if band["to"] else "above"
                 tax("slab", f"{int(band['rate'] * 100)}% on {inr(portion)} "
                             f"(slab {inr(band['from'])}-{upper})", t, bands_cfg["clause"])
+        if not base_tax:
+            # Say WHY tax is nil, so a zero still cites the clause that produced it.
+            tax("slab", f"Nil: total income {inr(ti)} lies entirely in the 0% slab",
+                D(0), bands_cfg["clause"])
 
         # ---- 7. Sec 87A rebate (+ marginal relief) ---------------------------
         rb = r["rebate_87a"]

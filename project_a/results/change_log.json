@@ -1,0 +1,201 @@
+{
+ "change_size": {
+  "rules_yaml_lines": 34,
+  "rule_text_lines": 21,
+  "engine_code_lines": 0
+ },
+ "stale_deployment_on_fy2025_26": {
+  "rules": {
+   "wrong": 230,
+   "total": 298,
+   "raised_error": 0
+  },
+  "llm_compiled": {
+   "wrong": 230,
+   "total": 298,
+   "raised_error": 0
+  }
+ },
+ "compile_history": [
+  {
+   "fy": "2024-25",
+   "compile": "v1: no feedback",
+   "edge_original_suite": "89/131",
+   "edge": "91/143",
+   "random": "49/150",
+   "silent_wrong": 153,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "review round 1",
+   "edge_original_suite": "131/131",
+   "edge": "137/143",
+   "random": "145/150",
+   "silent_wrong": 11,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": true
+  },
+  {
+   "fy": "2024-25",
+   "compile": "review round 2",
+   "edge_original_suite": "18/131",
+   "edge": "18/143",
+   "random": "26/150",
+   "silent_wrong": 249,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "round 3, candidate 0",
+   "edge_original_suite": "94/131",
+   "edge": "100/143",
+   "random": "146/150",
+   "silent_wrong": 47,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "round 3, candidate 1",
+   "edge_original_suite": "94/131",
+   "edge": "100/143",
+   "random": "146/150",
+   "silent_wrong": 47,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "round 3, candidate 2",
+   "edge_original_suite": "131/131",
+   "edge": "143/143",
+   "random": "150/150",
+   "silent_wrong": 0,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "round 3, candidate 3",
+   "edge_original_suite": "0/131",
+   "edge": "0/143",
+   "random": "0/150",
+   "silent_wrong": 0,
+   "visible_failure": "143 crashes",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2024-25",
+   "compile": "round 3, candidate 4",
+   "edge_original_suite": "89/131",
+   "edge": "91/143",
+   "random": "49/150",
+   "silent_wrong": 153,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v1, candidate 0",
+   "edge_original_suite": "100/136",
+   "edge": "106/148",
+   "random": "146/150",
+   "silent_wrong": 46,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v1, candidate 1",
+   "edge_original_suite": "100/136",
+   "edge": "106/148",
+   "random": "146/150",
+   "silent_wrong": 46,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v1, candidate 2",
+   "edge_original_suite": "75/136",
+   "edge": "75/148",
+   "random": "51/150",
+   "silent_wrong": 172,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v1, candidate 3",
+   "edge_original_suite": "100/136",
+   "edge": "106/148",
+   "random": "146/150",
+   "silent_wrong": 46,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v1, candidate 4",
+   "edge_original_suite": "100/136",
+   "edge": "106/148",
+   "random": "146/150",
+   "silent_wrong": 46,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v2 (+surcharge), candidate 0",
+   "edge_original_suite": "86/136",
+   "edge": "88/148",
+   "random": "51/150",
+   "silent_wrong": 159,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v2 (+surcharge), candidate 1",
+   "edge_original_suite": "136/136",
+   "edge": "142/148",
+   "random": "149/150",
+   "silent_wrong": 7,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": true
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v2 (+surcharge), candidate 2",
+   "edge_original_suite": "136/136",
+   "edge": "142/148",
+   "random": "144/150",
+   "silent_wrong": 12,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": true
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v2 (+surcharge), candidate 3",
+   "edge_original_suite": "0/136",
+   "edge": "0/148",
+   "random": "0/150",
+   "silent_wrong": 0,
+   "visible_failure": "148 crashes",
+   "passed_original_edges_but_wrong": false
+  },
+  {
+   "fy": "2025-26",
+   "compile": "checklist v2 (+surcharge), candidate 4",
+   "edge_original_suite": "136/136",
+   "edge": "148/148",
+   "random": "150/150",
+   "silent_wrong": 0,
+   "visible_failure": "",
+   "passed_original_edges_but_wrong": false
+  }
+ ]
+}

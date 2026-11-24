@@ -14,8 +14,10 @@ Model choice was forced by measurement, not preference: `gemini-2.5-*` returned 
 ### 1. The coding assistant got the LLM price wrong by 3–6× (caught by checking the official page)
 While writing `common/llm.py`, Claude filled the pricing table from memory with **$0.10 / $0.40 per million tokens** for flash-lite. Before any number was reported I checked Google's official pricing page, which lists **$0.30 input / $2.50 output** (Standard tier). Every "cost per 1,000 requests" and "cost per million rows" figure would have been understated 3× on input and 6× on output — a silent error, because cost is computed, never asserted against anything. Fix: corrected the table, added the source and date as a comment, and the rule *"prices are looked up, never remembered"*.
 
-### 2. The coding assistant corrupted `.gitignore` (caught by `git status`)
-The original `.gitignore` had no trailing newline. Claude appended `.pytest_cache/` with `printf`, which glued it onto the last line, producing the single pattern `data/raw/.pytest_cache/`. That silently **un-ignored the 128 MB raw NYC 311 sample**. It was caught because `git status` showed `?? data/` after a commit; I checked with `cat -e .gitignore`, split the line, and confirmed with `git ls-files` that nothing large had been committed.
+### 2. The benchmark scored the rules engine 0% and called it deterministic (caught by reading the numbers)
+The AI-written benchmark called `compute_with_meta()` and `compute(..., sample=s)` on every calculator, but the rules engine had neither method. Every rules case raised an error, so the engine scored **0/293**. The determinism test caught the exception and recorded "error" ten times, which counts as **one distinct answer, so "deterministic: yes"**. A failing implementation looked perfectly consistent. It was caught because 0% for the reference implementation was implausible. Fixes: the engine got the shared interface, and the determinism test now records the error text, so a crash can't pass as a stable answer.
+
+The same run exposed a real gap. When income fell entirely in the 0% slab, the engine emitted no tax lines, so 71 results showed ₹0 tax with no clause behind it. The engine now writes an explicit nil-slab line.
 
 ### 3. Gemini, as the system under test, was wrong in instructive ways (caught by the test suite)
 - **Fabricated audit trail (query-time LLM).** For one case it computed ₹54,600 instead of ₹47,840 and then invented a "Sec 288B rounding adjustment" of **₹7,800** so its trace still summed to the wrong total. A trace that adds up is not proof. The benchmark's traceability check therefore rejects any "rounding" line ≥ ₹10.
@@ -24,5 +26,5 @@ The original `.gitignore` had no trailing newline. Claude appended `.pytest_cach
 - **Silent parser bug in Project B.** Gemini sometimes returned a bare JSON list instead of `{"flags": [...]}`; the parser read that as "no flags", making the LLM look 33% accurate on problem *h* when it was really 100%. Fixed in `project_b/detectors/llm.py`.
 
 ## What I did not delegate
-- The expected tax values do not come from any AI: they come from an independent oracle (`project_a/tests/oracle.py`) and from the **official Income Tax Department calculator** for the 30 cases in `project_a/tests/official_checks.csv`, which I entered by hand.
-- Every `verified: true` flag in the rules YAML means I read the clause in the official source myself.
+- The expected tax values come from a separate oracle (`project_a/tests/oracle.py`) that shares no code with the engine. It was also AI-assisted and written from the same reading of the law, so it catches code errors, not wrong constants. The external check is the **official Income Tax Department calculator** for the 30 cases in `project_a/tests/official_checks.csv`, which I enter by hand. *Not yet filled in; until it is, that test is skipped.*
+- Every `verified: true` flag in the rules YAML means I read the clause in the official source myself. Values I have not yet checked stay `verified: false`.

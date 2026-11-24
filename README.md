@@ -1,80 +1,124 @@
-# Rules vs LLMs — take-home
+# Rules vs LLMs
 
-Two systems, each built several ways and measured, to decide **where a deterministic rule is the right tool, where an LLM earns its cost, and where the answer is both**.
+**When should you write a plain rule, when should you use statistics, and when is an LLM actually worth its cost?**
 
-- **Project A — Indian income-tax engine** (salaried, FY 2024-25 → FY 2025-26): hand-coded rules vs LLM at query time vs LLM-compiled rules, plus a plain-language parser that asks instead of guessing.
-- **Project B — data-quality layer for NYC 311 (2023)**: declarative rules vs statistics/ML vs LLM review for 12 corruption types, combined into a hybrid pipeline.
+This repo answers that question empirically. It builds the same systems several different ways and measures each one on accuracy, consistency, latency, and cost.
+
+| | Project A: Income tax engine | Project B: Data quality layer |
+|---|---|---|
+| **Domain** | Indian income tax for salaried individuals (FY 2024-25 → FY 2025-26) | NYC 311 service requests, 2023 (292K rows) |
+| **Approaches compared** | Hand-written rules · LLM computes at query time · LLM writes the code once | Declarative rules · Statistics/ML · LLM review |
+| **Evaluation** | 293 + 298 oracle test cases, repeat-query consistency | 12 injected corruption types with ground-truth labels |
+| **Outcome** | Rules engine with an LLM-assisted input parser | Hybrid pipeline using the best detector per problem type |
+
+---
+
+## Key findings
+
+- **Rules won on calculation.** The rules engine was correct on every test case (293 for FY 2024-25, 298 for FY 2025-26).
+- **The LLM computing tax directly was correct only 16–21% of the time**, and gave different answers to the same question when asked again. In one case it invented a ₹7,800 "rounding adjustment" so that its wrong answer would add up.
+- **LLM-written code reached 100%, but only with guardrails.** It took several rounds of review and test-gated selection between candidates. Some versions passed every edge case and were still wrong on random inputs.
+- **LLMs earned their cost on messy text**: Hinglish descriptions, short free-text inputs, and free-text fields in the 311 data, *as long as deterministic code made the final decision*.
+
+Full write-ups:
 
 | Document | Contents |
 |---|---|
-| [RESULTS_A.md](RESULTS_A.md) | Project A comparison table, Task 5 change log, final design |
-| [RESULTS_B.md](RESULTS_B.md) | Project B detection / false-alarm / cost table, real issues found, scale design |
-| [DECISION_MATRIX.md](DECISION_MATRIX.md) | One row per component: rule, statistical, LLM or hybrid, with the measurement behind it |
-| [AI_USAGE.md](AI_USAGE.md) | Tools used, and where the AI was wrong and how it was caught |
+| [RESULTS_A.md](RESULTS_A.md) | Project A comparison tables, the FY 2025-26 update, and the recommended design |
+| [RESULTS_B.md](RESULTS_B.md) | Project B detection, false-alarm and cost tables, real issues found in the data, and how it would scale |
+| [decision_matrix.md](decision_matrix.md) | Every component: rule, statistics, LLM, or hybrid, with the measurement behind the choice |
+| [AI_USAGE.md](AI_USAGE.md) | AI tools used during development, and where they got things wrong |
 
-## Setup
+---
 
-Python 3.10+.
+## Project A: Income tax engine
+
+Three implementations of the same tax calculation:
+
+1. **Rules engine.** The tax law is stored as data in YAML, one file per financial year, with every value linked to its legal clause. The engine produces a per-clause trace showing where each rupee comes from.
+2. **LLM at query time.** Gemini reads the rule text and computes the tax on every request.
+3. **LLM-compiled code.** Gemini writes Python once. Candidates go through review rounds, only a version that passes the test suite is selected, and it then runs offline without calling the LLM.
+
+A **natural-language parser** turns plain English or Hinglish descriptions into structured inputs. When information is missing, it asks a clarifying question instead of guessing.
+
+**Scope:** resident individuals with salary income. Covers the standard deduction, HRA (Sec 10(13A)), 80C, 80CCD(1B), 80D (including senior-citizen parents), home-loan interest under Sec 24(b), the Sec 87A rebate with marginal relief, surcharge with marginal relief, 4% cess, and rounding under Sec 288A/288B.
+**Not covered:** other income heads, professional tax, employer NPS contributions (80CCD(2)), and carry-forward of house-property losses.
+
+## Project B: Data quality layer for NYC 311
+
+1. Download a 2023 sample of NYC 311 service requests from NYC Open Data and profile it for real quality problems.
+2. Inject **12 types of corruption** at a controlled rate, recording exactly which rows were changed as ground-truth labels.
+3. Run three detector families (rules, statistics/ML, and LLM review) against every corruption type.
+4. Score each detector on detection rate, false-alarm rate, and cost, then combine the best performers into a single **hybrid pipeline**.
+
+---
+
+## Quick start
+
+Requires Python 3.10+ (developed on 3.12).
 
 ```bash
 pip install -r requirements.txt
-echo "GEMINI_API_KEY=your-key" > .env      # only needed for LLM cache misses; .env is git-ignored
+
+# Optional: only needed for LLM calls that aren't already cached
+echo "GEMINI_API_KEY=your-key" > .env
 ```
 
-## Reproduce every number — one command
+### Reproduce the results
 
 ```bash
-python run_all.py              # replays committed LLM answers (llm_cache/); calls Gemini only on a miss
-python run_all.py --offline    # never calls Gemini — no API key needed
-python run_all.py --only a     # Project A only   (--only b for Project B)
+python run_all.py              # runs everything, using cached LLM answers where available
+python run_all.py --offline    # never calls Gemini; no API key needed
+python run_all.py --only a     # Project A only (use --only b for Project B)
 ```
 
-Every Gemini response used in the reports is committed under `llm_cache/` together with its original latency and token counts, so `--offline` reproduces identical accuracy, latency and cost figures. Project B downloads its 2023 sample (292,000 rows, ~128 MB) from NYC Open Data on first run into `data/raw/` (git-ignored).
+Every Gemini response used in the write-ups is committed to `llm_cache/` along with its original latency and token counts, so the accuracy, latency, and cost figures reproduce exactly without an API key. Project B downloads its data sample (~128 MB) on the first run.
 
-## Useful commands
+### Other useful commands
 
 ```bash
-python -m pytest project_a/tests project_b/tests -q   # unit tests
-python -m project_a.impl_rules.engine                 # demo: tax under both regimes, every rupee with its clause
-python -m project_a.benchmark                         # Project A Task 4 tables -> project_a/results/
-python -m project_a.change_log                        # Project A Task 5 evidence -> project_a/results/
-python -m project_a.tests.build_cases 2025-26         # regenerate test cases from the independent oracle
-python -m project_a.impl_llm_compiled.compiler 2025-26 \
-    --feedback project_a/impl_llm_compiled/review/generic_checklist.txt   # LLM-compile rules, test, select
-python -m project_b.run                               # Project B end to end -> project_b/results/
+python -m pytest project_a/tests project_b/tests -q   # run the test suites
+python -m project_a.impl_rules.engine                 # demo: tax computed with each clause shown
+python -m project_a.benchmark                         # Project A comparison tables
+python -m project_a.change_log                        # evidence for the FY 2025-26 update
+python -m project_b.run                               # Project B end to end
 ```
 
-## Repository layout
+---
+
+## Repository structure
 
 ```
-run_all.py                     single entry point
-common/llm.py                  Gemini client: disk cache, cross-process rate limit, retries, token -> USD
-llm_cache/                     every LLM response used in the reports (committed)
+run_all.py               single entry point
+common/llm.py            Gemini wrapper: disk cache, rate limiting, retries, cost tracking
+llm_cache/               every LLM response used in the results
 
 project_a/
-  rules/fy2024_25.yaml         the law as data; every number carries its clause   (implementation a)
-  rules/fy2025_26.yaml         Finance Act 2025 change (Task 5)
-  rules_text/*.md              rule text the LLM implementations read             (b, c)
-  models.py                    TaxInput / TaxResult / TraceLine / Clarification
-  impl_rules/engine.py         (a) hand-coded rules engine with per-clause trace
-  impl_llm_query/              (b) LLM computes the tax on every request
-  impl_llm_compiled/           (c) LLM writes Python once -> review -> test-gated selection -> runs offline
-    review/                    reviewer feedback rounds and selection logs
-  parser/                      free text -> TaxInput or a clarifying question (regex baseline + LLM hybrid)
-  tests/                       oracle, 293 + 298 cases, 50 descriptions, 30 official-calculator checks
-  benchmark.py                 Task 4 measurements
-  change_log.py                Task 5 measurements
-  results/                     generated tables (JSON + Markdown)
+  rules/                 tax law as YAML, one file per year, each value tagged with its clause
+  rules_text/            the same rules as text, read by the LLM implementations
+  impl_rules/            (1) hand-written rules engine
+  impl_llm_query/        (2) LLM computes tax on every request
+  impl_llm_compiled/     (3) LLM writes the code once, then runs without the LLM
+  parser/                free text -> structured input, or a clarifying question
+  tests/                 oracle, test cases, natural-language descriptions
+  benchmark.py           comparison tables
+  change_log.py          FY 2025-26 update
+  results/               generated tables
 
 project_b/
-  download.py, profile.py      fetch 2023 sample, profile real quality problems
-  injector.py                  12 corruption types at a controlled rate, with ground-truth labels
-  detectors/{rules,stats,llm}.py   three detector families for every problem type
-  evaluate.py, pipeline.py     per-detector measurements; hybrid pipeline end to end
-  run.py                       Project B entry point
-  results/                     generated tables
+  download.py, profile.py    fetch the data and profile real quality problems
+  injector.py                inject 12 corruption types with ground-truth labels
+  detectors/                 rule, statistical, and LLM detectors
+  evaluate.py, pipeline.py   scoring and the hybrid pipeline
+  run.py                     Project B entry point
+  results/                   generated tables
 ```
 
-## Scope and assumptions (Project A)
+---
 
-Resident individual, salary income only, annual figures. Covers standard deduction, HRA (Sec 10(13A)/Rule 2A), 80C, 80CCD(1B), 80D (incl. senior-citizen parents), self-occupied home-loan interest (Sec 24(b)), Sec 87A rebate with marginal relief, surcharge with marginal relief, 4% cess, and Sec 288A/288B rounding. Excluded: other income heads, professional tax, employer NPS (80CCD(2)), carry-forward of house-property loss.
+## Known limitations
+
+Being explicit about what is and isn't verified:
+
+- **Official-calculator checks are pending.** `project_a/tests/official_checks.csv` contains 30 cases to verify against the Income Tax Department's calculator, but the official values haven't been filled in yet, so that test is skipped.
+- **Tax values are not yet independently verified.** Most values in the rules YAML are marked `verified: false`. The test oracle is a separate implementation, but it was written from the same reading of the law, so it catches code bugs, not a misread number in the law itself.

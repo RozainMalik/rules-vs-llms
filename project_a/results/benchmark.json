@@ -1,0 +1,814 @@
+{
+ "calculators": {
+  "2024-25": {
+   "rules": {
+    "n": 293,
+    "rupee_exact": 293,
+    "accuracy": 1.0,
+    "silent_wrong": 0,
+    "visible_errors": 0,
+    "traceable_and_correct": 1.0,
+    "latency_p50_s": 0.0001,
+    "latency_p95_s": 0.0001,
+    "cost_per_1000_usd": 0.0,
+    "failures": [],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "deterministic": true
+    },
+    "accuracy_on_llm_sample": 1.0
+   },
+   "llm_compiled": {
+    "n": 293,
+    "rupee_exact": 293,
+    "accuracy": 1.0,
+    "silent_wrong": 0,
+    "visible_errors": 0,
+    "traceable_and_correct": 0.959,
+    "latency_p50_s": 0.0001,
+    "latency_p95_s": 0.0001,
+    "cost_per_1000_usd": 0.0,
+    "failures": [],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "deterministic": true
+    },
+    "accuracy_on_llm_sample": 1.0
+   },
+   "llm_query": {
+    "n": 62,
+    "rupee_exact": 10,
+    "accuracy": 0.1613,
+    "silent_wrong": 52,
+    "visible_errors": 0,
+    "traceable_and_correct": 0.1452,
+    "latency_p50_s": 3.327,
+    "latency_p95_s": 11.246,
+    "cost_per_1000_usd": 3.111,
+    "failures": [
+     {
+      "id": "A002",
+      "category": "threshold_new",
+      "expected": {
+       "old": 0,
+       "new": 0
+      },
+      "got": {
+       "old": 3900,
+       "new": 0
+      }
+     },
+     {
+      "id": "A003",
+      "category": "threshold_new",
+      "expected": {
+       "old": 0,
+       "new": 0
+      },
+      "got": {
+       "old": 3900,
+       "new": 0
+      }
+     },
+     {
+      "id": "A066",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 60840,
+       "new": 5200
+      },
+      "got": {
+       "old": 59800,
+       "new": 26000
+      }
+     },
+     {
+      "id": "A067",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 61880,
+       "new": 10400
+      },
+      "got": {
+       "old": 60060,
+       "new": 54080
+      }
+     },
+     {
+      "id": "A068",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 62920,
+       "new": 15600
+      },
+      "got": {
+       "old": 62400,
+       "new": 16640
+      }
+     },
+     {
+      "id": "A069",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 64420,
+       "new": 23110
+      },
+      "got": {
+       "old": 63230,
+       "new": 22070
+      }
+     },
+     {
+      "id": "A073",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1366040,
+       "new": 1230110
+      },
+      "got": {
+       "old": 1391500,
+       "new": 1373570
+      }
+     },
+     {
+      "id": "A074",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1417000,
+       "new": 1263600
+      },
+      "got": {
+       "old": 1640520,
+       "new": 1629240
+      }
+     },
+     {
+      "id": "A075",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1570140,
+       "new": 1419600
+      },
+      "got": {
+       "old": 1622400,
+       "new": 1583400
+      }
+     },
+     {
+      "id": "A076",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1844700,
+       "new": 1695980
+      },
+      "got": {
+       "old": 1946880,
+       "new": 1913160
+      }
+     },
+     {
+      "id": "A089",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257420,
+       "new": 130010
+      },
+      "got": {
+       "old": 236680,
+       "new": 202860
+      }
+     },
+     {
+      "id": "A090",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257440,
+       "new": 130020
+      },
+      "got": {
+       "old": 236930,
+       "new": 213380
+      }
+     },
+     {
+      "id": "A091",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257510,
+       "new": 130070
+      },
+      "got": {
+       "old": 236920,
+       "new": 135200
+      }
+     },
+     {
+      "id": "A092",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257420,
+       "new": 130020
+      },
+      "got": {
+       "old": 236620,
+       "new": 137830
+      }
+     },
+     {
+      "id": "A095",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 1383200,
+       "new": 1236040
+      },
+      "got": {
+       "old": 1530960,
+       "new": 1374800
+      }
+     },
+     {
+      "id": "A096",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 3235440,
+       "new": 3075640
+      },
+      "got": {
+       "old": 3530880,
+       "new": 3522120
+      }
+     },
+     {
+      "id": "A097",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 6969560,
+       "new": 6803450
+      },
+      "got": {
+       "old": 6732900,
+       "new": 6725280
+      }
+     },
+     {
+      "id": "A098",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 1372800,
+       "new": 1236040
+      },
+      "got": {
+       "old": 1391040,
+       "new": 1350000
+      }
+     },
+     {
+      "id": "A101",
+      "category": "age_band",
+      "expected": {
+       "old": 33800,
+       "new": 0
+      },
+      "got": {
+       "old": 33800,
+       "new": 14040
+      }
+     },
+     {
+      "id": "A102",
+      "category": "age_band",
+      "expected": {
+       "old": 156000,
+       "new": 71500
+      },
+      "got": {
+       "old": 182000,
+       "new": 78000
+      }
+     },
+     {
+      "id": "A103",
+      "category": "age_band",
+      "expected": {
+       "old": 31200,
+       "new": 0
+      },
+      "got": {
+       "old": 33800,
+       "new": 18200
+      }
+     },
+     {
+      "id": "A104",
+      "category": "age_band",
+      "expected": {
+       "old": 145600,
+       "new": 71500
+      },
+      "got": {
+       "old": 161200,
+       "new": 67600
+      }
+     },
+     {
+      "id": "A109",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 71500
+      },
+      "got": {
+       "old": 166400,
+       "new": 67600
+      }
+     },
+     {
+      "id": "A110",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 71500
+      },
+      "got": {
+       "old": 54600,
+       "new": 65000
+      }
+     },
+     {
+      "id": "A111",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 71500
+      },
+      "got": {
+       "old": 166400,
+       "new": 65000
+      }
+     }
+    ],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      5,
+      8,
+      4,
+      10,
+      10
+     ],
+     "deterministic": false
+    }
+   }
+  },
+  "2025-26": {
+   "rules": {
+    "n": 298,
+    "rupee_exact": 298,
+    "accuracy": 1.0,
+    "silent_wrong": 0,
+    "visible_errors": 0,
+    "traceable_and_correct": 1.0,
+    "latency_p50_s": 0.0001,
+    "latency_p95_s": 0.0001,
+    "cost_per_1000_usd": 0.0,
+    "failures": [],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "deterministic": true
+    },
+    "accuracy_on_llm_sample": 1.0
+   },
+   "llm_compiled": {
+    "n": 298,
+    "rupee_exact": 298,
+    "accuracy": 1.0,
+    "silent_wrong": 0,
+    "visible_errors": 0,
+    "traceable_and_correct": 0.9597,
+    "latency_p50_s": 0.0001,
+    "latency_p95_s": 0.0001,
+    "cost_per_1000_usd": 0.0,
+    "failures": [],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "deterministic": true
+    },
+    "accuracy_on_llm_sample": 1.0
+   },
+   "llm_query": {
+    "n": 62,
+    "rupee_exact": 13,
+    "accuracy": 0.2097,
+    "silent_wrong": 49,
+    "visible_errors": 0,
+    "traceable_and_correct": 0.1935,
+    "latency_p50_s": 3.011,
+    "latency_p95_s": 4.126,
+    "cost_per_1000_usd": 3.0964,
+    "failures": [
+     {
+      "id": "A071",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 188760,
+       "new": 5200
+      },
+      "got": {
+       "old": 189800,
+       "new": 81120
+      }
+     },
+     {
+      "id": "A072",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 190320,
+       "new": 10400
+      },
+      "got": {
+       "old": 18460,
+       "new": 10400
+      }
+     },
+     {
+      "id": "A073",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 202800,
+       "new": 52000
+      },
+      "got": {
+       "old": 195000,
+       "new": 81120
+      }
+     },
+     {
+      "id": "A074",
+      "category": "rebate_87a_relief",
+      "expected": {
+       "old": 209220,
+       "new": 73400
+      },
+      "got": {
+       "old": 204360,
+       "new": 13430
+      }
+     },
+     {
+      "id": "A078",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1366040,
+       "new": 1115710
+      },
+      "got": {
+       "old": 1493720,
+       "new": 1464330
+      }
+     },
+     {
+      "id": "A079",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1417000,
+       "new": 1149200
+      },
+      "got": {
+       "old": 1642160,
+       "new": 1493070
+      }
+     },
+     {
+      "id": "A080",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1570140,
+       "new": 1295580
+      },
+      "got": {
+       "old": 1699920,
+       "new": 1581000
+      }
+     },
+     {
+      "id": "A081",
+      "category": "surcharge_relief",
+      "expected": {
+       "old": 1844700,
+       "new": 1570140
+      },
+      "got": {
+       "old": 1946800,
+       "new": 1827800
+      }
+     },
+     {
+      "id": "A094",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257410,
+       "new": 97500
+      },
+      "got": {
+       "old": 236610,
+       "new": 113360
+      }
+     },
+     {
+      "id": "A095",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257450,
+       "new": 97520
+      },
+      "got": {
+       "old": 239450,
+       "new": 117070
+      }
+     },
+     {
+      "id": "A096",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257510,
+       "new": 97550
+      },
+      "got": {
+       "old": 236600,
+       "new": 113360
+      }
+     },
+     {
+      "id": "A097",
+      "category": "rounding_288b",
+      "expected": {
+       "old": 257420,
+       "new": 97510
+      },
+      "got": {
+       "old": 236600,
+       "new": 108170
+      }
+     },
+     {
+      "id": "A100",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 1383200,
+       "new": 1121640
+      },
+      "got": {
+       "old": 1493720,
+       "new": 1362400
+      }
+     },
+     {
+      "id": "A101",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 3235440,
+       "new": 2949800
+      },
+      "got": {
+       "old": 3529920,
+       "new": 2987080
+      }
+     },
+     {
+      "id": "A102",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 6969560,
+       "new": 6671890
+      },
+      "got": {
+       "old": 7187150,
+       "new": 4820880
+      }
+     },
+     {
+      "id": "A103",
+      "category": "age_surcharge",
+      "expected": {
+       "old": 1372800,
+       "new": 1121640
+      },
+      "got": {
+       "old": 1640520,
+       "new": 1583400
+      }
+     },
+     {
+      "id": "A107",
+      "category": "age_band",
+      "expected": {
+       "old": 156000,
+       "new": 0
+      },
+      "got": {
+       "old": 161200,
+       "new": 65000
+      }
+     },
+     {
+      "id": "A108",
+      "category": "age_band",
+      "expected": {
+       "old": 31200,
+       "new": 0
+      },
+      "got": {
+       "old": 33800,
+       "new": 0
+      }
+     },
+     {
+      "id": "A109",
+      "category": "age_band",
+      "expected": {
+       "old": 145600,
+       "new": 0
+      },
+      "got": {
+       "old": 161200,
+       "new": 71760
+      }
+     },
+     {
+      "id": "A114",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 0
+      },
+      "got": {
+       "old": 114400,
+       "new": 54600
+      }
+     },
+     {
+      "id": "A115",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 0
+      },
+      "got": {
+       "old": 54600,
+       "new": 31200
+      }
+     },
+     {
+      "id": "A116",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 0
+      },
+      "got": {
+       "old": 54600,
+       "new": 49400
+      }
+     },
+     {
+      "id": "A117",
+      "category": "cap_80c",
+      "expected": {
+       "old": 117000,
+       "new": 0
+      },
+      "got": {
+       "old": 54600,
+       "new": 63440
+      }
+     },
+     {
+      "id": "A118",
+      "category": "cap_80ccd_1b",
+      "expected": {
+       "old": 148200,
+       "new": 0
+      },
+      "got": {
+       "old": 161200,
+       "new": 41600
+      }
+     },
+     {
+      "id": "A119",
+      "category": "cap_80ccd_1b",
+      "expected": {
+       "old": 148200,
+       "new": 0
+      },
+      "got": {
+       "old": 135200,
+       "new": 63960
+      }
+     }
+    ],
+    "determinism": {
+     "inputs": 5,
+     "repeats": 10,
+     "distinct_answers_per_input": [
+      8,
+      7,
+      6,
+      10,
+      10
+     ],
+     "deterministic": false
+    }
+   }
+  }
+ },
+ "parsers": {
+  "regex": {
+   "correct": 36,
+   "n": 50,
+   "unsafe_guesses": 7,
+   "by_style": {
+    "english": "8/12",
+    "hinglish": "10/12",
+    "terse": "5/6",
+    "incomplete": "9/10",
+    "contradictory": "2/6",
+    "ambiguous": "2/4"
+   },
+   "wrong_ids": [
+    "D02",
+    "D08",
+    "D10",
+    "D11",
+    "D17",
+    "D18",
+    "D28",
+    "D36",
+    "D42",
+    "D43",
+    "D44",
+    "D45",
+    "D48",
+    "D50"
+   ],
+   "latency_p50_s": 0.0,
+   "cost_per_1000_usd": 0.0
+  },
+  "llm_hybrid": {
+   "correct": 49,
+   "n": 50,
+   "unsafe_guesses": 0,
+   "by_style": {
+    "english": "11/12",
+    "hinglish": "12/12",
+    "terse": "6/6",
+    "incomplete": "10/10",
+    "contradictory": "6/6",
+    "ambiguous": "4/4"
+   },
+   "wrong_ids": [
+    "D03"
+   ],
+   "latency_p50_s": 1.201,
+   "cost_per_1000_usd": 0.6096,
+   "determinism_distinct_outputs": [
+    1,
+    2,
+    1
+   ]
+  }
+ }
+}

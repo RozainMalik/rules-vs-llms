@@ -99,7 +99,7 @@
  ],
  "totals": {
   "rows": 60160,
-  "seconds": 6.205651628009946,
+  "seconds": 8.35587529498298,
   "llm_calls": 33,
   "llm_cost_usd": 0.009327499999999999,
   "llm_rows": 215,
@@ -107,8 +107,8 @@
  },
  "cost_per_M_rows_usd": 0.155,
  "llm_rows_share": 0.00357,
- "cpu_rows_per_s": 9694,
- "batch_latency_s": 2.91,
+ "cpu_rows_per_s": 7200,
+ "batch_latency_s": 2.98,
  "real_data_alerts_per_4000_rows": {
   "a": 0,
   "b": 0,
@@ -128,7 +128,7 @@
   "llm_calls": 1,
   "llm_rows": 11,
   "llm_cost_usd": 0.000239,
-  "cpu_seconds": 0.43573120799919707,
+  "cpu_seconds": 0.5399139170040144,
   "llm_latency_s": 1.055,
   "cost_per_M_rows_usd": 0.06
  },

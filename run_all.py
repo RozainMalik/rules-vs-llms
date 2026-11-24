@@ -1,5 +1,5 @@
 """
-ONE COMMAND that reproduces every number in RESULTS_A.md, RESULTS_B.md and DECISION_MATRIX.md.
+ONE COMMAND that reproduces every number in RESULTS_A.md, RESULTS_B.md and decision_matrix.md.
 
     python run_all.py              # replay committed LLM cache; call Gemini only on a cache miss
     python run_all.py --offline    # never call Gemini (fails loudly on a cache miss)
